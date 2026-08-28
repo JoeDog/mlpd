@@ -1,0 +1,11 @@
+#/bin/sh
+# Start mlpd
+
+LOG_FILE="var/server.log"
+PID_FILE="var/mlpd.pid"
+nohup java -cp "lib/*:out" org.joedog.ann.MLPd 8080 > "$LOG_FILE" 2>&1 &
+PID_NUM=$!
+echo $PID_NUM > $PID_FILE
+echo "Starting mlpd with pid $PID_NUM"
+exit 0
+

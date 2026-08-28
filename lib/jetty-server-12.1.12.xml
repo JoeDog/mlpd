@@ -1,0 +1,1512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mlp eta="0.3" alpha="0.75" gain="0.99">
+  <layer type="InputLayer" function="-1" count="54">
+    <neuron position="0">
+    </neuron>
+    <neuron position="1">
+    </neuron>
+    <neuron position="2">
+    </neuron>
+    <neuron position="3">
+    </neuron>
+    <neuron position="4">
+    </neuron>
+    <neuron position="5">
+    </neuron>
+    <neuron position="6">
+    </neuron>
+    <neuron position="7">
+    </neuron>
+    <neuron position="8">
+    </neuron>
+    <neuron position="9">
+    </neuron>
+    <neuron position="10">
+    </neuron>
+    <neuron position="11">
+    </neuron>
+    <neuron position="12">
+    </neuron>
+    <neuron position="13">
+    </neuron>
+    <neuron position="14">
+    </neuron>
+    <neuron position="15">
+    </neuron>
+    <neuron position="16">
+    </neuron>
+    <neuron position="17">
+    </neuron>
+    <neuron position="18">
+    </neuron>
+    <neuron position="19">
+    </neuron>
+    <neuron position="20">
+    </neuron>
+    <neuron position="21">
+    </neuron>
+    <neuron position="22">
+    </neuron>
+    <neuron position="23">
+    </neuron>
+    <neuron position="24">
+    </neuron>
+    <neuron position="25">
+    </neuron>
+    <neuron position="26">
+    </neuron>
+    <neuron position="27">
+    </neuron>
+    <neuron position="28">
+    </neuron>
+    <neuron position="29">
+    </neuron>
+    <neuron position="30">
+    </neuron>
+    <neuron position="31">
+    </neuron>
+    <neuron position="32">
+    </neuron>
+    <neuron position="33">
+    </neuron>
+    <neuron position="34">
+    </neuron>
+    <neuron position="35">
+    </neuron>
+    <neuron position="36">
+    </neuron>
+    <neuron position="37">
+    </neuron>
+    <neuron position="38">
+    </neuron>
+    <neuron position="39">
+    </neuron>
+    <neuron position="40">
+    </neuron>
+    <neuron position="41">
+    </neuron>
+    <neuron position="42">
+    </neuron>
+    <neuron position="43">
+    </neuron>
+    <neuron position="44">
+    </neuron>
+    <neuron position="45">
+    </neuron>
+    <neuron position="46">
+    </neuron>
+    <neuron position="47">
+    </neuron>
+    <neuron position="48">
+    </neuron>
+    <neuron position="49">
+    </neuron>
+    <neuron position="50">
+    </neuron>
+    <neuron position="51">
+    </neuron>
+    <neuron position="52">
+    </neuron>
+    <neuron position="53">
+    </neuron>
+  </layer>
+  <layer type="HiddenLayer" function="6" count="24">
+    <neuron position="0">
+      <connection neuronIndex="0" layerIndex="0" weight="0.04155597487855256"/>
+      <connection neuronIndex="1" layerIndex="0" weight="0.14384358630480848"/>
+      <connection neuronIndex="2" layerIndex="0" weight="-0.03773566123538269"/>
+      <connection neuronIndex="3" layerIndex="0" weight="-0.22846731597215186"/>
+      <connection neuronIndex="4" layerIndex="0" weight="-0.0018923204215206546"/>
+      <connection neuronIndex="5" layerIndex="0" weight="0.2179653050841482"/>
+      <connection neuronIndex="6" layerIndex="0" weight="0.14985396420527097"/>
+      <connection neuronIndex="7" layerIndex="0" weight="-0.18664744160434396"/>
+      <connection neuronIndex="8" layerIndex="0" weight="0.14966378465689584"/>
+      <connection neuronIndex="9" layerIndex="0" weight="0.2835944338086169"/>
+      <connection neuronIndex="10" layerIndex="0" weight="0.3213057094223967"/>
+      <connection neuronIndex="11" layerIndex="0" weight="0.24736984161380032"/>
+      <connection neuronIndex="12" layerIndex="0" weight="0.18253572380902766"/>
+      <connection neuronIndex="13" layerIndex="0" weight="0.16238974238375753"/>
+      <connection neuronIndex="14" layerIndex="0" weight="-0.2560222533621227"/>
+      <connection neuronIndex="15" layerIndex="0" weight="-0.10566717894948102"/>
+      <connection neuronIndex="16" layerIndex="0" weight="-0.1286751081108059"/>
+      <connection neuronIndex="17" layerIndex="0" weight="-0.19199481823594236"/>
+      <connection neuronIndex="18" layerIndex="0" weight="0.05941569472219904"/>
+      <connection neuronIndex="19" layerIndex="0" weight="-0.2341912813419771"/>
+      <connection neuronIndex="20" layerIndex="0" weight="-0.1063211532416008"/>
+      <connection neuronIndex="21" layerIndex="0" weight="0.32727681206371123"/>
+      <connection neuronIndex="22" layerIndex="0" weight="-0.09481229750301279"/>
+      <connection neuronIndex="23" layerIndex="0" weight="-0.12581582066818062"/>
+      <connection neuronIndex="24" layerIndex="0" weight="0.16787899284154328"/>
+      <connection neuronIndex="25" layerIndex="0" weight="-0.11807181408288159"/>
+      <connection neuronIndex="26" layerIndex="0" weight="0.2711160672995066"/>
+      <connection neuronIndex="27" layerIndex="0" weight="0.17127994985841516"/>
+      <connection neuronIndex="28" layerIndex="0" weight="-0.3232706105604022"/>
+      <connection neuronIndex="29" layerIndex="0" weight="0.32467241475209513"/>
+      <connection neuronIndex="30" layerIndex="0" weight="0.11197974135076183"/>
+      <connection neuronIndex="31" layerIndex="0" weight="-0.3296247702552272"/>
+      <connection neuronIndex="32" layerIndex="0" weight="-0.24051855866257027"/>
+      <connection neuronIndex="33" layerIndex="0" weight="0.12831546013457223"/>
+      <connection neuronIndex="34" layerIndex="0" weight="0.05230033708229803"/>
+      <connection neuronIndex="35" layerIndex="0" weight="-0.3031538464241517"/>
+      <connection neuronIndex="36" layerIndex="0" weight="0.3025422575905287"/>
+      <connection neuronIndex="37" layerIndex="0" weight="0.03099080650639008"/>
+      <connection neuronIndex="38" layerIndex="0" weight="0.31106849597443426"/>
+      <connection neuronIndex="39" layerIndex="0" weight="0.037588128575312074"/>
+      <connection neuronIndex="40" layerIndex="0" weight="0.058797181213349425"/>
+      <connection neuronIndex="41" layerIndex="0" weight="0.25902136269742976"/>
+      <connection neuronIndex="42" layerIndex="0" weight="0.11277117543841736"/>
+      <connection neuronIndex="43" layerIndex="0" weight="-0.12036960456734502"/>
+      <connection neuronIndex="44" layerIndex="0" weight="-0.22561017603311367"/>
+      <connection neuronIndex="45" layerIndex="0" weight="-0.1033392724182402"/>
+      <connection neuronIndex="46" layerIndex="0" weight="-0.0941232048403991"/>
+      <connection neuronIndex="47" layerIndex="0" weight="0.23505170404187586"/>
+      <connection neuronIndex="48" layerIndex="0" weight="0.19602071389011683"/>
+      <connection neuronIndex="49" layerIndex="0" weight="-0.2761297013441019"/>
+      <connection neuronIndex="50" layerIndex="0" weight="-0.21700487939920002"/>
+      <connection neuronIndex="51" layerIndex="0" weight="-0.07474195554113022"/>
+      <connection neuronIndex="52" layerIndex="0" weight="0.2433904411575602"/>
+      <connection neuronIndex="53" layerIndex="0" weight="-0.0653851247596573"/>
+      <bias value="1.0" weight="0.0"/>
+    </neuron>
+    <neuron position="1">
+      <connection neuronIndex="0" layerIndex="0" weight="-0.22062339893742638"/>
+      <connection neuronIndex="1" layerIndex="0" weight="0.21403825257200054"/>
+      <connection neuronIndex="2" layerIndex="0" weight="-0.02071645720853177"/>
+      <connection neuronIndex="3" layerIndex="0" weight="-0.0022882728069257285"/>
+      <connection neuronIndex="4" layerIndex="0" weight="-0.18950524656840192"/>
+      <connection neuronIndex="5" layerIndex="0" weight="6.24210264883629E-4"/>
+      <connection neuronIndex="6" layerIndex="0" weight="0.30034532604838277"/>
+      <connection neuronIndex="7" layerIndex="0" weight="0.027266329362836628"/>
+      <connection neuronIndex="8" layerIndex="0" weight="-0.2681627718878176"/>
+      <connection neuronIndex="9" layerIndex="0" weight="-0.1988552651668757"/>
+      <connection neuronIndex="10" layerIndex="0" weight="-0.14394558855254558"/>
+      <connection neuronIndex="11" layerIndex="0" weight="0.30156204701175543"/>
+      <connection neuronIndex="12" layerIndex="0" weight="0.289000462053945"/>
+      <connection neuronIndex="13" layerIndex="0" weight="-0.2745426823729264"/>
+      <connection neuronIndex="14" layerIndex="0" weight="-0.08066086099116282"/>
+      <connection neuronIndex="15" layerIndex="0" weight="0.25847425923111617"/>
+      <connection neuronIndex="16" layerIndex="0" weight="-0.28787757195378394"/>
+      <connection neuronIndex="17" layerIndex="0" weight="0.22299444050009104"/>
+      <connection neuronIndex="18" layerIndex="0" weight="-0.027565300415655802"/>
+      <connection neuronIndex="19" layerIndex="0" weight="-0.32228878303672115"/>
+      <connection neuronIndex="20" layerIndex="0" weight="0.32618089958188484"/>
+      <connection neuronIndex="21" layerIndex="0" weight="-0.018313965039800484"/>
+      <connection neuronIndex="22" layerIndex="0" weight="0.10599503871692112"/>
+      <connection neuronIndex="23" layerIndex="0" weight="0.29548910240800835"/>
+      <connection neuronIndex="24" layerIndex="0" weight="0.133136353737419"/>
+      <connection neuronIndex="25" layerIndex="0" weight="-0.06276912039257837"/>
+      <connection neuronIndex="26" layerIndex="0" weight="0.28045792407362263"/>
+      <connection neuronIndex="27" layerIndex="0" weight="0.3179910715959701"/>
+      <connection neuronIndex="28" layerIndex="0" weight="-0.2474806393470712"/>
+      <connection neuronIndex="29" layerIndex="0" weight="0.18115161653310213"/>
+      <connection neuronIndex="30" layerIndex="0" weight="-0.2474453116143961"/>
+      <connection neuronIndex="31" layerIndex="0" weight="0.3298009633360272"/>
+      <connection neuronIndex="32" layerIndex="0" weight="0.2790668639636859"/>
+      <connection neuronIndex="33" layerIndex="0" weight="-0.32369249094033775"/>
+      <connection neuronIndex="34" layerIndex="0" weight="-0.030144243750071964"/>
+      <connection neuronIndex="35" layerIndex="0" weight="0.11938620425886753"/>
+      <connection neuronIndex="36" layerIndex="0" weight="-0.015653371569593177"/>
+      <connection neuronIndex="37" layerIndex="0" weight="0.10102120304445211"/>
+      <connection neuronIndex="38" layerIndex="0" weight="-0.2964783215317066"/>
+      <connection neuronIndex="39" layerIndex="0" weight="0.29377294697040185"/>
+      <connection neuronIndex="40" layerIndex="0" weight="-0.22895652486579762"/>
+      <connection neuronIndex="41" layerIndex="0" weight="-0.050323801193691564"/>
+      <connection neuronIndex="42" layerIndex="0" weight="0.254872580379273"/>
+      <connection neuronIndex="43" layerIndex="0" weight="0.09489626035359244"/>
+      <connection neuronIndex="44" layerIndex="0" weight="0.20487285372307756"/>
+      <connection neuronIndex="45" layerIndex="0" weight="0.02828933394432248"/>
+      <connection neuronIndex="46" layerIndex="0" weight="0.25785003220729247"/>
+      <connection neuronIndex="47" layerIndex="0" weight="0.005142710474181911"/>
+      <connection neuronIndex="48" layerIndex="0" weight="0.03279539176265012"/>
+      <connection neuronIndex="49" layerIndex="0" weight="-0.13286785273532045"/>
+      <connection neuronIndex="50" layerIndex="0" weight="-0.1052808370802473"/>
+      <connection neuronIndex="51" layerIndex="0" weight="-0.10601035403140954"/>
+      <connection neuronIndex="52" layerIndex="0" weight="0.15100214298349834"/>
+      <connection neuronIndex="53" layerIndex="0" weight="0.2437011908365619"/>
+      <bias value="1.0" weight="0.0"/>
+    </neuron>
+    <neuron position="2">
+      <connection neuronIndex="0" layerIndex="0" weight="0.22788746166962331"/>
+      <connection neuronIndex="1" layerIndex="0" weight="0.12015364759602892"/>
+      <connection neuronIndex="2" layerIndex="0" weight="-0.0026411970077816482"/>
+      <connection neuronIndex="3" layerIndex="0" weight="0.026752674308957447"/>
+      <connection neuronIndex="4" layerIndex="0" weight="-0.0763773625931522"/>
+      <connection neuronIndex="5" layerIndex="0" weight="-0.248223462349135"/>
+      <connection neuronIndex="6" layerIndex="0" weight="-0.24986779813963822"/>
+      <connection neuronIndex="7" layerIndex="0" weight="-0.0533731436937076"/>
+      <connection neuronIndex="8" layerIndex="0" weight="-0.17477392815153384"/>
+      <connection neuronIndex="9" layerIndex="0" weight="-0.20188731324089113"/>
+      <connection neuronIndex="10" layerIndex="0" weight="-0.20550149170079485"/>
+      <connection neuronIndex="11" layerIndex="0" weight="-0.3092586348601498"/>
+      <connection neuronIndex="12" layerIndex="0" weight="-0.13418755691558334"/>
+      <connection neuronIndex="13" layerIndex="0" weight="-0.3292751309134007"/>
+      <connection neuronIndex="14" layerIndex="0" weight="-0.3073817267105563"/>
+      <connection neuronIndex="15" layerIndex="0" weight="-0.012804765334962553"/>
+      <connection neuronIndex="16" layerIndex="0" weight="-0.17008478463624627"/>
+      <connection neuronIndex="17" layerIndex="0" weight="0.07744833273763962"/>
+      <connection neuronIndex="18" layerIndex="0" weight="0.14794021879737973"/>
+      <connection neuronIndex="19" layerIndex="0" weight="0.2899751366487538"/>
+      <connection neuronIndex="20" layerIndex="0" weight="0.15792125934951923"/>
+      <connection neuronIndex="21" layerIndex="0" weight="0.06978654260122535"/>
+      <connection neuronIndex="22" layerIndex="0" weight="0.2590276871975537"/>
+      <connection neuronIndex="23" layerIndex="0" weight="0.2026821109100912"/>
+      <connection neuronIndex="24" layerIndex="0" weight="0.2733371017339789"/>
+      <connection neuronIndex="25" layerIndex="0" weight="0.20065595007339926"/>
+      <connection neuronIndex="26" layerIndex="0" weight="0.22315585849568736"/>
+      <connection neuronIndex="27" layerIndex="0" weight="-0.2537535865571164"/>
+      <connection neuronIndex="28" layerIndex="0" weight="-0.2824873495770564"/>
+      <connection neuronIndex="29" layerIndex="0" weight="-0.09792910995015536"/>
+      <connection neuronIndex="30" layerIndex="0" weight="0.2415838622059307"/>
+      <connection neuronIndex="31" layerIndex="0" weight="-0.2082130977620938"/>
+      <connection neuronIndex="32" layerIndex="0" weight="0.11008783461615507"/>
+      <connection neuronIndex="33" layerIndex="0" weight="0.312599196501875"/>
+      <connection neuronIndex="34" layerIndex="0" weight="0.25054980412417355"/>
+      <connection neuronIndex="35" layerIndex="0" weight="0.016301904814693458"/>
+      <connection neuronIndex="36" layerIndex="0" weight="0.00822293275334185"/>
+      <connection neuronIndex="37" layerIndex="0" weight="0.0036014271710282375"/>
+      <connection neuronIndex="38" layerIndex="0" weight="-0.18258969872914216"/>
+      <connection neuronIndex="39" layerIndex="0" weight="0.3263960664828371"/>
+      <connection neuronIndex="40" layerIndex="0" weight="-0.16035265601606188"/>
+      <connection neuronIndex="41" layerIndex="0" weight="0.11871041051887138"/>
+      <connection neuronIndex="42" layerIndex="0" weight="0.18365934160427327"/>
+      <connection neuronIndex="43" layerIndex="0" weight="-0.1951614082775464"/>
+      <connection neuronIndex="44" layerIndex="0" weight="-0.26550790328061247"/>
+      <connection neuronIndex="45" layerIndex="0" weight="-0.23021861482108935"/>
+      <connection neuronIndex="46" layerIndex="0" weight="-0.13269079120406332"/>
+      <connection neuronIndex="47" layerIndex="0" weight="-0.21426427463005152"/>
+      <connection neuronIndex="48" layerIndex="0" weight="0.16457989181483168"/>
+      <connection neuronIndex="49" layerIndex="0" weight="0.18550410415406443"/>
+      <connection neuronIndex="50" layerIndex="0" weight="-0.32148847744986425"/>
+      <connection neuronIndex="51" layerIndex="0" weight="-0.1715131669209978"/>
+      <connection neuronIndex="52" layerIndex="0" weight="0.10554677511116328"/>
+      <connection neuronIndex="53" layerIndex="0" weight="-0.2229361897211753"/>
+      <bias value="1.0" weight="0.0"/>
+    </neuron>
+    <neuron position="3">
+      <connection neuronIndex="0" layerIndex="0" weight="0.2666907922950656"/>
+      <connection neuronIndex="1" layerIndex="0" weight="0.2866248489234417"/>
+      <connection neuronIndex="2" layerIndex="0" weight="-0.03896797103222388"/>
+      <connection neuronIndex="3" layerIndex="0" weight="-0.12478855361018049"/>
+      <connection neuronIndex="4" layerIndex="0" weight="-0.1471152149725652"/>
+      <connection neuronIndex="5" layerIndex="0" weight="-0.1037231836578962"/>
+      <connection neuronIndex="6" layerIndex="0" weight="-0.20862848824679409"/>
+      <connection neuronIndex="7" layerIndex="0" weight="0.01807627972609377"/>
+      <connection neuronIndex="8" layerIndex="0" weight="0.16438899174675725"/>
+      <connection neuronIndex="9" layerIndex="0" weight="-0.203675583781955"/>
+      <connection neuronIndex="10" layerIndex="0" weight="0.29471840969947366"/>
+      <connection neuronIndex="11" layerIndex="0" weight="-0.27060936566347216"/>
+      <connection neuronIndex="12" layerIndex="0" weight="0.08999930686800461"/>
+      <connection neuronIndex="13" layerIndex="0" weight="0.11758808386012132"/>
+      <connection neuronIndex="14" layerIndex="0" weight="-0.007769292490972579"/>
+      <connection neuronIndex="15" layerIndex="0" weight="0.038579792707841176"/>
+      <connection neuronIndex="16" layerIndex="0" weight="0.21766665331451157"/>
+      <connection neuronIndex="17" layerIndex="0" weight="0.07208263530188064"/>
+      <connection neuronIndex="18" layerIndex="0" weight="0.2779735393829012"/>
+      <connection neuronIndex="19" layerIndex="0" weight="-0.1439376456472768"/>
+      <connection neuronIndex="20" layerIndex="0" weight="-0.22648329567807046"/>
+      <connection neuronIndex="21" layerIndex="0" weight="0.052804584611936545"/>
+      <connection neuronIndex="22" layerIndex="0" weight="0.12848716955361478"/>
+      <connection neuronIndex="23" layerIndex="0" weight="-0.19294452541873502"/>
+      <connection neuronIndex="24" layerIndex="0" weight="-0.3287816041228869"/>
+      <connection neuronIndex="25" layerIndex="0" weight="-0.06480550633399007"/>
+      <connection neuronIndex="26" layerIndex="0" weight="0.22559535413358017"/>
+      <connection neuronIndex="27" layerIndex="0" weight="0.28532047662720633"/>
+      <connection neuronIndex="28" layerIndex="0" weight="-0.21870717764479272"/>
+      <connection neuronIndex="29" layerIndex="0" weight="0.1860569156086524"/>
+      <connection neuronIndex="30" layerIndex="0" weight="-0.022002766664949103"/>
+      <connection neuronIndex="31" layerIndex="0" weight="-0.32794715602029567"/>
+      <connection neuronIndex="32" layerIndex="0" weight="0.3290360865039175"/>
+      <connection neuronIndex="33" layerIndex="0" weight="-0.16526637999092839"/>
+      <connection neuronIndex="34" layerIndex="0" weight="-0.007370028196386047"/>
+      <connection neuronIndex="35" layerIndex="0" weight="-0.013722321004202787"/>
+      <connection neuronIndex="36" layerIndex="0" weight="0.1546955886160129"/>
+      <connection neuronIndex="37" layerIndex="0" weight="-0.10595253230333002"/>
+      <connection neuronIndex="38" layerIndex="0" weight="0.08712810343385369"/>
+      <connection neuronIndex="39" layerIndex="0" weight="0.14940289489260455"/>
+      <connection neuronIndex="40" layerIndex="0" weight="-0.23716141181487188"/>
+      <connection neuronIndex="41" layerIndex="0" weight="-0.3199700659112786"/>
+      <connection neuronIndex="42" layerIndex="0" weight="0.10974052893499497"/>
+      <connection neuronIndex="43" layerIndex="0" weight="-0.015830997938207192"/>
+      <connection neuronIndex="44" layerIndex="0" weight="-0.08718249058273159"/>
+      <connection neuronIndex="45" layerIndex="0" weight="-0.09742411106015711"/>
+      <connection neuronIndex="46" layerIndex="0" weight="0.26381372311669965"/>
+      <connection neuronIndex="47" layerIndex="0" weight="-0.24530433223010856"/>
+      <connection neuronIndex="48" layerIndex="0" weight="-0.28619842541693646"/>
+      <connection neuronIndex="49" layerIndex="0" weight="-0.023961476951529226"/>
+      <connection neuronIndex="50" layerIndex="0" weight="0.2762631192170099"/>
+      <connection neuronIndex="51" layerIndex="0" weight="-0.1283270486343761"/>
+      <connection neuronIndex="52" layerIndex="0" weight="0.16957916579680143"/>
+      <connection neuronIndex="53" layerIndex="0" weight="0.11901667541061728"/>
+      <bias value="1.0" weight="0.0"/>
+    </neuron>
+    <neuron position="4">
+      <connection neuronIndex="0" layerIndex="0" weight="-0.3089094853377118"/>
+      <connection neuronIndex="1" layerIndex="0" weight="0.14924046649724265"/>
+      <connection neuronIndex="2" layerIndex="0" weight="-0.03678556198994215"/>
+      <connection neuronIndex="3" layerIndex="0" weight="0.17017099782043216"/>
+      <connection neuronIndex="4" layerIndex="0" weight="0.15794229361871592"/>
+      <connection neuronIndex="5" layerIndex="0" weight="0.04873351097534079"/>
+      <connection neuronIndex="6" layerIndex="0" weight="-0.3134062443437986"/>
+      <connection neuronIndex="7" layerIndex="0" weight="-0.09707765678084307"/>
+      <connection neuronIndex="8" layerIndex="0" weight="0.009010403218696117"/>
+      <connection neuronIndex="9" layerIndex="0" weight="0.1624840608340143"/>
+      <connection neuronIndex="10" layerIndex="0" weight="0.24462518171711206"/>
+      <connection neuronIndex="11" layerIndex="0" weight="0.2622554342904197"/>
+      <connection neuronIndex="12" layerIndex="0" weight="0.1866531706494176"/>
+      <connection neuronIndex="13" layerIndex="0" weight="-0.05056976924120821"/>
+      <connection neuronIndex="14" layerIndex="0" weight="-0.18013789752858791"/>
+      <connection neuronIndex="15" layerIndex="0" weight="0.23215270242315716"/>
+      <connection neuronIndex="16" layerIndex="0" weight="0.2962599742915894"/>
+      <connection neuronIndex="17" layerIndex="0" weight="-0.32432108565500184"/>
+      <connection neuronIndex="18" layerIndex="0" weight="0.0932057547054545"/>
+      <connection neuronIndex="19" layerIndex="0" weight="0.2485387625437176"/>
+      <connection neuronIndex="20" layerIndex="0" weight="-0.10420188796502816"/>
+      <connection neuronIndex="21" layerIndex="0" weight="-0.07125151667159202"/>
+      <connection neuronIndex="22" layerIndex="0" weight="0.019374260464501913"/>
+      <connection neuronIndex="23" layerIndex="0" weight="0.14464976795864015"/>
+      <connection neuronIndex="24" layerIndex="0" weight="-0.0494958812968917"/>
+      <connection neuronIndex="25" layerIndex="0" weight="-0.024200414889017086"/>
+      <connection neuronIndex="26" layerIndex="0" weight="-0.32380971749153725"/>
+      <connection neuronIndex="27" layerIndex="0" weight="-0.09613962142611712"/>
+      <connection neuronIndex="28" layerIndex="0" weight="-0.17132804470225863"/>
+      <connection neuronIndex="29" layerIndex="0" weight="0.25048011118822117"/>
+      <connection neuronIndex="30" layerIndex="0" weight="0.3155435252050168"/>
+      <connection neuronIndex="31" layerIndex="0" weight="-0.08292291351505077"/>
+      <connection neuronIndex="32" layerIndex="0" weight="-0.2527882701976556"/>
+      <connection neuronIndex="33" layerIndex="0" weight="-0.27971146776420275"/>
+      <connection neuronIndex="34" layerIndex="0" weight="-0.04454986322742749"/>
+      <connection neuronIndex="35" layerIndex="0" weight="0.08411953158488344"/>
+      <connection neuronIndex="36" layerIndex="0" weight="0.07946177842681962"/>
+      <connection neuronIndex="37" layerIndex="0" weight="0.024864489617995034"/>
+      <connection neuronIndex="38" layerIndex="0" weight="-0.29349130399789425"/>
+      <connection neuronIndex="39" layerIndex="0" weight="-0.2591753762088842"/>
+      <connection neuronIndex="40" layerIndex="0" weight="0.16756697625911476"/>
+      <connection neuronIndex="41" layerIndex="0" weight="-0.1292499713848368"/>
+      <connection neuronIndex="42" layerIndex="0" weight="-0.3057512805704323"/>
+      <connection neuronIndex="43" layerIndex="0" weight="-0.26696991152337823"/>
+      <connection neuronIndex="44" layerIndex="0" weight="-0.05768527964641318"/>
+      <connection neuronIndex="45" layerIndex="0" weight="0.1605475440940326"/>
+      <connection neuronIndex="46" layerIndex="0" weight="-0.22932853932164138"/>
+      <connection neuronIndex="47" layerIndex="0" weight="0.03165472622663412"/>
+      <connection neuronIndex="48" layerIndex="0" weight="-0.2736193857687315"/>
+      <connection neuronIndex="49" layerIndex="0" weight="0.039126646659637665"/>
+      <connection neuronIndex="50" layerIndex="0" weight="-0.26964291314053196"/>
+      <connection neuronIndex="51" layerIndex="0" weight="0.15523619738135513"/>
+      <connection neuronIndex="52" layerIndex="0" weight="0.2027188082003824"/>
+      <connection neuronIndex="53" layerIndex="0" weight="-0.28924174430111627"/>
+      <bias value="1.0" weight="0.0"/>
+    </neuron>
+    <neuron position="5">
+      <connection neuronIndex="0" layerIndex="0" weight="0.18865470989221417"/>
+      <connection neuronIndex="1" layerIndex="0" weight="0.0292929317297273"/>
+      <connection neuronIndex="2" layerIndex="0" weight="-0.10527526504252788"/>
+      <connection neuronIndex="3" layerIndex="0" weight="-0.17428669817061035"/>
+      <connection neuronIndex="4" layerIndex="0" weight="-0.2899824355320964"/>
+      <connection neuronIndex="5" layerIndex="0" weight="-0.27901876399874925"/>
+      <connection neuronIndex="6" layerIndex="0" weight="-0.2709918391547671"/>
+      <connection neuronIndex="7" layerIndex="0" weight="0.28437032573289606"/>
+      <connection neuronIndex="8" layerIndex="0" weight="0.008000774367885488"/>
+      <connection neuronIndex="9" layerIndex="0" weight="0.24594599098761266"/>
+      <connection neuronIndex="10" layerIndex="0" weight="0.2640101715053937"/>
+      <connection neuronIndex="11" layerIndex="0" weight="0.11375972864790307"/>
+      <connection neuronIndex="12" layerIndex="0" weight="0.06133553870263547"/>
+      <connection neuronIndex="13" layerIndex="0" weight="0.16838687172534267"/>
+      <connection neuronIndex="14" layerIndex="0" weight="-0.18388402048091917"/>
+      <connection neuronIndex="15" layerIndex="0" weight="-0.22912027763809334"/>
+      <connection neuronIndex="16" layerIndex="0" weight="0.3068437918698242"/>
+      <connection neuronIndex="17" layerIndex="0" weight="0.2961599604664344"/>
+      <connection neuronIndex="18" layerIndex="0" weight="-0.3000318583236257"/>
+      <connection neuronIndex="19" layerIndex="0" weight="0.13173088767158164"/>
+      <connection neuronIndex="20" layerIndex="0" weight="0.31128690122134145"/>
+      <connection neuronIndex="21" layerIndex="0" weight="-0.09238861981005639"/>
+      <connection neuronIndex="22" layerIndex="0" weight="-0.32913638619389235"/>
+      <connection neuronIndex="23" layerIndex="0" weight="-0.20841029347918363"/>
+      <connection neuronIndex="24" layerIndex="0" weight="-0.08874983172109713"/>
+      <connection neuronIndex="25" layerIndex="0" weight="-0.2506617268741706"/>
+      <connection neuronIndex="26" layerIndex="0" weight="0.13807796359363278"/>
+      <connection neuronIndex="27" layerIndex="0" weight="-0.2032126955085183"/>
+      <connection neuronIndex="28" layerIndex="0" weight="-0.14240616502869663"/>
+      <connection neuronIndex="29" layerIndex="0" weight="-0.08553183437515038"/>
+      <connection neuronIndex="30" layerIndex="0" weight="-0.08071362352879882"/>
+      <connection neuronIndex="31" layerIndex="0" weight="-0.04588444996748331"/>
+      <connection neuronIndex="32" layerIndex="0" weight="-0.017264723720204767"/>
+      <connection neuronIndex="33" layerIndex="0" weight="-0.13218229298414486"/>
+      <connection neuronIndex="34" layerIndex="0" weight="0.10533350136019459"/>
+      <connection neuronIndex="35" layerIndex="0" weight="-0.07057456398430201"/>
+      <connection neuronIndex="36" layerIndex="0" weight="0.17538913109155768"/>
+      <connection neuronIndex="37" layerIndex="0" weight="-0.042647447095184976"/>
+      <connection neuronIndex="38" layerIndex="0" weight="0.16320878426350788"/>
+      <connection neuronIndex="39" layerIndex="0" weight="-0.1492081911810754"/>
+      <connection neuronIndex="40" layerIndex="0" weight="0.1992953147938204"/>
+      <connection neuronIndex="41" layerIndex="0" weight="-0.21209961748280376"/>
+      <connection neuronIndex="42" layerIndex="0" weight="0.14937073030022885"/>
+      <connection neuronIndex="43" layerIndex="0" weight="-0.24433387319909566"/>
+      <connection neuronIndex="44" layerIndex="0" weight="-0.3229084304323619"/>
+      <connection neuronIndex="45" layerIndex="0" weight="0.06289990661320588"/>
+      <connection neuronIndex="46" layerIndex="0" weight="-0.21467568052956165"/>
+      <connection neuronIndex="47" layerIndex="0" weight="-0.1362479253883949"/>
+      <connection neuronIndex="48" layerIndex="0" weight="0.2210654575727446"/>
+      <connection neuronIndex="49" layerIndex="0" weight="-0.03275347917509647"/>
+      <connection neuronIndex="50" layerIndex="0" weight="-0.3199220460984611"/>
+      <connection neuronIndex="51" layerIndex="0" weight="-0.3061308423228082"/>
+      <connection neuronIndex="52" layerIndex="0" weight="-0.197888266294654"/>
+      <connection neuronIndex="53" layerIndex="0" weight="-9.126336299070115E-5"/>
+      <bias value="1.0" weight="0.0"/>
+    </neuron>
+    <neuron position="6">
+      <connection neuronIndex="0" layerIndex="0" weight="0.0740022225742325"/>
+      <connection neuronIndex="1" layerIndex="0" weight="0.3034636228472128"/>
+      <connection neuronIndex="2" layerIndex="0" weight="0.22232297771206827"/>
+      <connection neuronIndex="3" layerIndex="0" weight="0.12864449602495776"/>
+      <connection neuronIndex="4" layerIndex="0" weight="-0.20994836557794375"/>
+      <connection neuronIndex="5" layerIndex="0" weight="0.04168965558148274"/>
+      <connection neuronIndex="6" layerIndex="0" weight="-0.06161157644827192"/>
+      <connection neuronIndex="7" layerIndex="0" weight="0.04834026793899643"/>
+      <connection neuronIndex="8" layerIndex="0" weight="0.18109158614498028"/>
+      <connection neuronIndex="9" layerIndex="0" weight="-0.17486099467339775"/>
+      <connection neuronIndex="10" layerIndex="0" weight="-0.17310823566405867"/>
+      <connection neuronIndex="11" layerIndex="0" weight="0.04443698867346002"/>
+      <connection neuronIndex="12" layerIndex="0" weight="-0.23490251353257985"/>
+      <connection neuronIndex="13" layerIndex="0" weight="-0.08602231664493584"/>
+      <connection neuronIndex="14" layerIndex="0" weight="0.300632929555455"/>
+      <connection neuronIndex="15" layerIndex="0" weight="-0.15113585803936394"/>
+      <connection neuronIndex="16" layerIndex="0" weight="-0.007154964945739695"/>
+      <connection neuronIndex="17" layerIndex="0" weight="-0.30247501978865143"/>
+      <connection neuronIndex="18" layerIndex="0" weight="-0.20816131347716635"/>
+      <connection neuronIndex="19" layerIndex="0" weight="0.11832899157589738"/>
+      <connection neuronIndex="20" layerIndex="0" weight="0.25164195450126753"/>
+      <connection neuronIndex="21" layerIndex="0" weight="0.1707767048958057"/>
+      <connection neuronIndex="22" layerIndex="0" weight="0.07742986852058947"/>
+      <connection neuronIndex="23" layerIndex="0" weight="0.039075348092141304"/>
+      <connection neuronIndex="24" layerIndex="0" weight="0.3005652870400322"/>
+      <connection neuronIndex="25" layerIndex="0" weight="-0.029709304178331675"/>
+      <connection neuronIndex="26" layerIndex="0" weight="-0.12097568020986132"/>
+      <connection neuronIndex="27" layerIndex="0" weight="-0.27916536235232203"/>
+      <connection neuronIndex="28" layerIndex="0" weight="0.22853016310914503"/>
+      <connection neuronIndex="29" layerIndex="0" weight="0.16273394215583398"/>
+      <connection neuronIndex="30" layerIndex="0" weight="-0.14208505999658358"/>
+      <connection neuronIndex="31" layerIndex="0" weight="0.11360854101418644"/>
+      <connection neuronIndex="32" layerIndex="0" weight="-0.08307518098094183"/>
+      <connection neuronIndex="33" layerIndex="0" weight="-0.04952106921387128"/>
+      <connection neuronIndex="34" layerIndex="0" weight="-0.1517469409094854"/>
+      <connection neuronIndex="35" layerIndex="0" weight="-0.21329516438829374"/>
+      <connection neuronIndex="36" layerIndex="0" weight="-0.011453211411172115"/>
+      <connection neuronIndex="37" layerIndex="0" weight="-0.19129481604546192"/>
+      <connection neuronIndex="38" layerIndex="0" weight="0.21884606171599846"/>
+      <connection neuronIndex="39" layerIndex="0" weight="-0.2001429583727941"/>
+      <connection neuronIndex="40" layerIndex="0" weight="0.2793705666490917"/>
+      <connection neuronIndex="41" layerIndex="0" weight="0.16359772777042092"/>
+      <connection neuronIndex="42" layerIndex="0" weight="0.09720818517210994"/>
+      <connection neuronIndex="43" layerIndex="0" weight="0.15197110988320894"/>
+      <connection neuronIndex="44" layerIndex="0" weight="-0.2033836026999879"/>
+      <connection neuronIndex="45" layerIndex="0" weight="0.23568999014615816"/>
+      <connection neuronIndex="46" layerIndex="0" weight="-0.2777744921396495"/>
+      <connection neuronIndex="47" layerIndex="0" weight="-0.30209193909425064"/>
+      <connection neuronIndex="48" layerIndex="0" weight="0.1448548460310351"/>
+      <connection neuronIndex="49" layerIndex="0" weight="-0.3093356288304505"/>
+      <connection neuronIndex="50" layerIndex="0" weight="0.31965238995253425"/>
+      <connection neuronIndex="51" layerIndex="0" weight="0.19388078505055756"/>
+      <connection neuronIndex="52" layerIndex="0" weight="-0.13083957971376406"/>
+      <connection neuronIndex="53" layerIndex="0" weight="-0.2052809177433394"/>
+      <bias value="1.0" weight="0.0"/>
+    </neuron>
+    <neuron position="7">
+      <connection neuronIndex="0" layerIndex="0" weight="-0.20745296164358273"/>
+      <connection neuronIndex="1" layerIndex="0" weight="0.23856109105885154"/>
+      <connection neuronIndex="2" layerIndex="0" weight="0.00879444536749091"/>
+      <connection neuronIndex="3" layerIndex="0" weight="0.15338005683257327"/>
+      <connection neuronIndex="4" layerIndex="0" weight="-0.1018576427727933"/>
+      <connection neuronIndex="5" layerIndex="0" weight="-0.2304022434737042"/>
+      <connection neuronIndex="6" layerIndex="0" weight="0.17126244674089658"/>
+      <connection neuronIndex="7" layerIndex="0" weight="-0.04983706011202854"/>
+      <connection neuronIndex="8" layerIndex="0" weight="0.3181670671384477"/>
+      <connection neuronIndex="9" layerIndex="0" weight="-0.1594496057493534"/>
+      <connection neuronIndex="10" layerIndex="0" weight="0.0588485325646233"/>
+      <connection neuronIndex="11" layerIndex="0" weight="-0.1362399592438199"/>
+      <connection neuronIndex="12" layerIndex="0" weight="-0.1634037834251624"/>
+      <connection neuronIndex="13" layerIndex="0" weight="0.2899577497343386"/>
+      <connection neuronIndex="14" layerIndex="0" weight="0.023701851851012645"/>
+      <connection neuronIndex="15" layerIndex="0" weight="-0.32548336694454955"/>
+      <connection neuronIndex="16" layerIndex="0" weight="-0.16957903394099533"/>
+      <connection neuronIndex="17" layerIndex="0" weight="0.10053042055378214"/>
+      <connection neuronIndex="18" layerIndex="0" weight="0.21094866043632482"/>
+      <connection neuronIndex="19" layerIndex="0" weight="-0.26125964838957066"/>
+      <connection neuronIndex="20" layerIndex="0" weight="-0.1331312827911634"/>
+      <connection neuronIndex="21" layerIndex="0" weight="0.1388733778373255"/>
+      <connection neuronIndex="22" layerIndex="0" weight="-0.12833485127342645"/>
+      <connection neuronIndex="23" layerIndex="0" weight="0.17781553325449923"/>
+      <connection neuronIndex="24" layerIndex="0" weight="0.0715503210357058"/>
+      <connection neuronIndex="25" layerIndex="0" weight="0.11514876266420299"/>
+      <connection neuronIndex="26" layerIndex="0" weight="0.14388608283532617"/>
+      <connection neuronIndex="27" layerIndex="0" weight="0.23246216423545057"/>
+      <connection neuronIndex="28" layerIndex="0" weight="-0.30171765176548626"/>
+      <connection neuronIndex="29" layerIndex="0" weight="-0.32864728444226793"/>
+      <connection neuronIndex="30" layerIndex="0" weight="-0.26760277782237685"/>
+      <connection neuronIndex="31" layerIndex="0" weight="-0.2361257787046815"/>
+      <connection neuronIndex="32" layerIndex="0" weight="-0.17247648931141904"/>
+      <connection neuronIndex="33" layerIndex="0" weight="0.2953151011878093"/>
+      <connection neuronIndex="34" layerIndex="0" weight="0.0017678624514438357"/>
+      <connection neuronIndex="35" layerIndex="0" weight="0.2594242126269897"/>
+      <connection neuronIndex="36" layerIndex="0" weight="0.28475122993154306"/>
+      <connection neuronIndex="37" layerIndex="0" weight="0.13348292093907677"/>
+      <connection neuronIndex="38" layerIndex="0" weight="0.32585408924187703"/>
+      <connection neuronIndex="39" layerIndex="0" weight="0.0583079937517928"/>
+      <connection neuronIndex="40" layerIndex="0" weight="0.026874176495341684"/>
+      <connection neuronIndex="41" layerIndex="0" weight="0.19867873637129835"/>
+      <connection neuronIndex="42" layerIndex="0" weight="0.20822919945663693"/>
+      <connection neuronIndex="43" layerIndex="0" weight="0.3115863942737827"/>
+      <connection neuronIndex="44" layerIndex="0" weight="-0.3244759742485152"/>
+      <connection neuronIndex="45" layerIndex="0" weight="0.1737513768891112"/>
+      <connection neuronIndex="46" layerIndex="0" weight="0.24660214230959848"/>
+      <connection neuronIndex="47" layerIndex="0" weight="-0.12245917944933257"/>
+      <connection neuronIndex="48" layerIndex="0" weight="0.25202232496103866"/>
+      <connection neuronIndex="49" layerIndex="0" weight="0.3255757628783524"/>
+      <connection neuronIndex="50" layerIndex="0" weight="-0.04051075800156817"/>
+      <connection neuronIndex="51" layerIndex="0" weight="0.29084744953914327"/>
+      <connection neuronIndex="52" layerIndex="0" weight="0.09575710111005648"/>
+      <connection neuronIndex="53" layerIndex="0" weight="0.2813057742952923"/>
+      <bias value="1.0" weight="0.0"/>
+    </neuron>
+    <neuron position="8">
+      <connection neuronIndex="0" layerIndex="0" weight="-0.11278256629095887"/>
+      <connection neuronIndex="1" layerIndex="0" weight="-0.05688587199597589"/>
+      <connection neuronIndex="2" layerIndex="0" weight="-0.3086171896580092"/>
+      <connection neuronIndex="3" layerIndex="0" weight="-0.24194591058217013"/>
+      <connection neuronIndex="4" layerIndex="0" weight="0.16183001360898364"/>
+      <connection neuronIndex="5" layerIndex="0" weight="-0.13049856388059586"/>
+      <connection neuronIndex="6" layerIndex="0" weight="0.3208423755112612"/>
+      <connection neuronIndex="7" layerIndex="0" weight="0.018481950547489856"/>
+      <connection neuronIndex="8" layerIndex="0" weight="-0.18826645681122084"/>
+      <connection neuronIndex="9" layerIndex="0" weight="-0.30561181559445394"/>
+      <connection neuronIndex="10" layerIndex="0" weight="-0.19061962311115507"/>
+      <connection neuronIndex="11" layerIndex="0" weight="0.022187488115784804"/>
+      <connection neuronIndex="12" layerIndex="0" weight="-0.1436703813494038"/>
+      <connection neuronIndex="13" layerIndex="0" weight="0.0889029421620453"/>
+      <connection neuronIndex="14" layerIndex="0" weight="0.20286329993739477"/>
+      <connection neuronIndex="15" layerIndex="0" weight="-0.06993511028803134"/>
+      <connection neuronIndex="16" layerIndex="0" weight="0.07263813653949047"/>
+      <connection neuronIndex="17" layerIndex="0" weight="-0.06282977289747632"/>
+      <connection neuronIndex="18" layerIndex="0" weight="0.11112704583913713"/>
+      <connection neuronIndex="19" layerIndex="0" weight="0.3193295867260721"/>
+      <connection neuronIndex="20" layerIndex="0" weight="0.09905641195692727"/>
+      <connection neuronIndex="21" layerIndex="0" weight="0.28881355347210075"/>
+      <connection neuronIndex="22" layerIndex="0" weight="0.18806716496784787"/>
+      <connection neuronIndex="23" layerIndex="0" weight="-0.05690001294634561"/>
+      <connection neuronIndex="24" layerIndex="0" weight="0.04368471320550166"/>
+      <connection neuronIndex="25" layerIndex="0" weight="-0.11091457651890907"/>
+      <connection neuronIndex="26" layerIndex="0" weight="0.1893561419542677"/>
+      <connection neuronIndex="27" layerIndex="0" weight="0.2609063854752855"/>
+      <connection neuronIndex="28" layerIndex="0" weight="-0.0633602430786222"/>
+      <connection neuronIndex="29" layerIndex="0" weight="0.12223773942774158"/>
+      <connection neuronIndex="30" layerIndex="0" weight="0.15877491071343086"/>
+      <connection neuronIndex="31" layerIndex="0" weight="0.22567054528519864"/>
+      <connection neuronIndex="32" layerIndex="0" weight="0.008091098416026177"/>
+      <connection neuronIndex="33" layerIndex="0" weight="0.21136270988924616"/>
+      <connection neuronIndex="34" layerIndex="0" weight="-0.20204596848963713"/>
+      <connection neuronIndex="35" layerIndex="0" weight="-0.1766527848646437"/>
+      <connection neuronIndex="36" layerIndex="0" weight="-0.1897144781207874"/>
+      <connection neuronIndex="37" layerIndex="0" weight="-0.15026065968595007"/>
+      <connection neuronIndex="38" layerIndex="0" weight="-0.01700562017945828"/>
+      <connection neuronIndex="39" layerIndex="0" weight="-0.18575936103234886"/>
+      <connection neuronIndex="40" layerIndex="0" weight="0.14702902427166953"/>
+      <connection neuronIndex="41" layerIndex="0" weight="0.015589585652526217"/>
+      <connection neuronIndex="42" layerIndex="0" weight="-0.1778155686046867"/>
+      <connection neuronIndex="43" layerIndex="0" weight="0.3183091150242741"/>
+      <connection neuronIndex="44" layerIndex="0" weight="-0.11631263725528229"/>
+      <connection neuronIndex="45" layerIndex="0" weight="-0.011490494080828695"/>
+      <connection neuronIndex="46" layerIndex="0" weight="-0.17593352423039615"/>
+      <connection neuronIndex="47" layerIndex="0" weight="0.22619241069384882"/>
+      <connection neuronIndex="48" layerIndex="0" weight="0.18869189115968737"/>
+      <connection neuronIndex="49" layerIndex="0" weight="-0.18432879075812308"/>
+      <connection neuronIndex="50" layerIndex="0" weight="-0.053978587016650814"/>
+      <connection neuronIndex="51" layerIndex="0" weight="0.07827502027968009"/>
+      <connection neuronIndex="52" layerIndex="0" weight="-0.30790549588677646"/>
+      <connection neuronIndex="53" layerIndex="0" weight="0.300856119126691"/>
+      <bias value="1.0" weight="0.0"/>
+    </neuron>
+    <neuron position="9">
+      <connection neuronIndex="0" layerIndex="0" weight="-0.16805535590601103"/>
+      <connection neuronIndex="1" layerIndex="0" weight="0.2619781569961603"/>
+      <connection neuronIndex="2" layerIndex="0" weight="0.1581947970186917"/>
+      <connection neuronIndex="3" layerIndex="0" weight="-0.06113775060384552"/>
+      <connection neuronIndex="4" layerIndex="0" weight="-0.27746593919873036"/>
+      <connection neuronIndex="5" layerIndex="0" weight="0.253343432406212"/>
+      <connection neuronIndex="6" layerIndex="0" weight="0.018819664912156864"/>
+      <connection neuronIndex="7" layerIndex="0" weight="0.3241972506636727"/>
+      <connection neuronIndex="8" layerIndex="0" weight="-0.13426804743806867"/>
+      <connection neuronIndex="9" layerIndex="0" weight="0.14537858704083811"/>
+      <connection neuronIndex="10" layerIndex="0" weight="0.2967428769248485"/>
+      <connection neuronIndex="11" layerIndex="0" weight="-0.3079403057281036"/>
+      <connection neuronIndex="12" layerIndex="0" weight="-0.21861375611570555"/>
+      <connection neuronIndex="13" layerIndex="0" weight="0.08323428579108932"/>
+      <connection neuronIndex="14" layerIndex="0" weight="-0.07453324431500519"/>
+      <connection neuronIndex="15" layerIndex="0" weight="-0.13518429536360346"/>
+      <connection neuronIndex="16" layerIndex="0" weight="0.1814141943650613"/>
+      <connection neuronIndex="17" layerIndex="0" weight="-0.04491630689429005"/>
+      <connection neuronIndex="18" layerIndex="0" weight="-0.265314810537223"/>
+      <connection neuronIndex="19" layerIndex="0" weight="-0.25284432381975597"/>
+      <connection neuronIndex="20" layerIndex="0" weight="0.29071880855468174"/>
+      <connection neuronIndex="21" layerIndex="0" weight="-0.107928131527013"/>
+      <connection neuronIndex="22" layerIndex="0" weight="0.18406146503188586"/>
+      <connection neuronIndex="23" layerIndex="0" weight="0.2023745183029682"/>
+      <connection neuronIndex="24" layerIndex="0" weight="-0.04270221592263629"/>
+      <connection neuronIndex="25" layerIndex="0" weight="0.272831361779369"/>
+      <connection neuronIndex="26" layerIndex="0" weight="-0.07727092551255804"/>
+      <connection neuronIndex="27" layerIndex="0" weight="-0.15429900198798427"/>
+      <connection neuronIndex="28" layerIndex="0" weight="-0.0542378782105466"/>
+      <connection neuronIndex="29" layerIndex="0" weight="-0.08859224383543476"/>
+      <connection neuronIndex="30" layerIndex="0" weight="-0.20143702512403303"/>
+      <connection neuronIndex="31" layerIndex="0" weight="0.2508671685682243"/>
+      <connection neuronIndex="32" layerIndex="0" weight="-0.24631369376211798"/>
+      <connection neuronIndex="33" layerIndex="0" weight="-0.3050443067811547"/>
+      <connection neuronIndex="34" layerIndex="0" weight="-0.23376519853762956"/>
+      <connection neuronIndex="35" layerIndex="0" weight="0.09199198075898352"/>
+      <connection neuronIndex="36" layerIndex="0" weight="0.2171509160960437"/>
+      <connection neuronIndex="37" layerIndex="0" weight="-0.21920298754065998"/>
+      <connection neuronIndex="38" layerIndex="0" weight="-0.07611804340294459"/>
+      <connection neuronIndex="39" layerIndex="0" weight="0.019861645987791277"/>
+      <connection neuronIndex="40" layerIndex="0" weight="-0.3243528676757567"/>
+      <connection neuronIndex="41" layerIndex="0" weight="0.26151462545124143"/>
+      <connection neuronIndex="42" layerIndex="0" weight="-0.26681333423372755"/>
+      <connection neuronIndex="43" layerIndex="0" weight="-0.22358458168972023"/>
+      <connection neuronIndex="44" layerIndex="0" weight="0.21079976860087252"/>
+      <connection neuronIndex="45" layerIndex="0" weight="0.013456258678420707"/>
+      <connection neuronIndex="46" layerIndex="0" weight="0.04691254858508925"/>
+      <connection neuronIndex="47" layerIndex="0" weight="0.09842373754399081"/>
+      <connection neuronIndex="48" layerIndex="0" weight="0.17809131027064445"/>
+      <connection neuronIndex="49" layerIndex="0" weight="-0.3261477311181733"/>
+      <connection neuronIndex="50" layerIndex="0" weight="0.016959664726864998"/>
+      <connection neuronIndex="51" layerIndex="0" weight="0.1622631556073849"/>
+      <connection neuronIndex="52" layerIndex="0" weight="0.11529583984631853"/>
+      <connection neuronIndex="53" layerIndex="0" weight="0.15903029084403597"/>
+      <bias value="1.0" weight="0.0"/>
+    </neuron>
+    <neuron position="10">
+      <connection neuronIndex="0" layerIndex="0" weight="-0.20470168078324671"/>
+      <connection neuronIndex="1" layerIndex="0" weight="0.29522492477581036"/>
+      <connection neuronIndex="2" layerIndex="0" weight="-0.06121321037115046"/>
+      <connection neuronIndex="3" layerIndex="0" weight="-0.10985295712207524"/>
+      <connection neuronIndex="4" layerIndex="0" weight="0.2029574067554361"/>
+      <connection neuronIndex="5" layerIndex="0" weight="-0.2104055443438108"/>
+      <connection neuronIndex="6" layerIndex="0" weight="-0.09104900497667848"/>
+      <connection neuronIndex="7" layerIndex="0" weight="-0.12155776114628616"/>
+      <connection neuronIndex="8" layerIndex="0" weight="0.3041619263936533"/>
+      <connection neuronIndex="9" layerIndex="0" weight="0.2228243813445146"/>
+      <connection neuronIndex="10" layerIndex="0" weight="-0.18375299224388747"/>
+      <connection neuronIndex="11" layerIndex="0" weight="0.046346311725173006"/>
+      <connection neuronIndex="12" layerIndex="0" weight="-0.02813932675270453"/>
+      <connection neuronIndex="13" layerIndex="0" weight="-0.06048158879926635"/>
+      <connection neuronIndex="14" layerIndex="0" weight="-0.14925504497412934"/>
+      <connection neuronIndex="15" layerIndex="0" weight="-0.29423958964933866"/>
+      <connection neuronIndex="16" layerIndex="0" weight="-0.11661082808339238"/>
+      <connection neuronIndex="17" layerIndex="0" weight="0.10120508048176702"/>
+      <connection neuronIndex="18" layerIndex="0" weight="0.12924870850676223"/>
+      <connection neuronIndex="19" layerIndex="0" weight="0.2110728187045779"/>
+      <connection neuronIndex="20" layerIndex="0" weight="-0.028405626328611877"/>
+      <connection neuronIndex="21" layerIndex="0" weight="0.041001898097561607"/>
+      <connection neuronIndex="22" layerIndex="0" weight="0.219860106111548"/>
+      <connection neuronIndex="23" layerIndex="0" weight="0.06610625771040718"/>
+      <connection neuronIndex="24" layerIndex="0" weight="0.02283853075592318"/>
+      <connection neuronIndex="25" layerIndex="0" weight="0.049784665346346235"/>
+      <connection neuronIndex="26" layerIndex="0" weight="0.15284441663022186"/>
+      <connection neuronIndex="27" layerIndex="0" weight="0.10488338451284757"/>
+      <connection neuronIndex="28" layerIndex="0" weight="-0.2204304636579655"/>
+      <connection neuronIndex="29" layerIndex="0" weight="-0.2965462646267491"/>
+      <connection neuronIndex="30" layerIndex="0" weight="0.27548365657915436"/>
+      <connection neuronIndex="31" layerIndex="0" weight="0.25001968786179046"/>
+      <connection neuronIndex="32" layerIndex="0" weight="-0.13138607654976986"/>
+      <connection neuronIndex="33" layerIndex="0" weight="0.31881429587979343"/>
+      <connection neuronIndex="34" layerIndex="0" weight="-0.04908189622085024"/>
+      <connection neuronIndex="35" layerIndex="0" weight="-0.2608478424852672"/>
+      <connection neuronIndex="36" layerIndex="0" weight="0.25230153260475424"/>
+      <connection neuronIndex="37" layerIndex="0" weight="0.308240369229186"/>
+      <connection neuronIndex="38" layerIndex="0" weight="-0.27497642489144586"/>
+      <connection neuronIndex="39" layerIndex="0" weight="0.15882551779872167"/>
+      <connection neuronIndex="40" layerIndex="0" weight="0.16589117627961997"/>
+      <connection neuronIndex="41" layerIndex="0" weight="-0.05242093409683091"/>
+      <connection neuronIndex="42" layerIndex="0" weight="-0.30503622390843627"/>
+      <connection neuronIndex="43" layerIndex="0" weight="0.05600579822385049"/>
+      <connection neuronIndex="44" layerIndex="0" weight="0.2018756970188081"/>
+      <connection neuronIndex="45" layerIndex="0" weight="-0.29658326431658316"/>
+      <connection neuronIndex="46" layerIndex="0" weight="0.02462198510039887"/>
+      <connection neuronIndex="47" layerIndex="0" weight="0.2839903999851883"/>
+      <connection neuronIndex="48" layerIndex="0" weight="-0.0646162994915147"/>
+      <connection neuronIndex="49" layerIndex="0" weight="0.046646243587907366"/>
+      <connection neuronIndex="50" layerIndex="0" weight="0.30402072757534643"/>
+      <connection neuronIndex="51" layerIndex="0" weight="0.2653673487176574"/>
+      <connection neuronIndex="52" layerIndex="0" weight="-0.32180448138886425"/>
+      <connection neuronIndex="53" layerIndex="0" weight="0.110022304728844"/>
+      <bias value="1.0" weight="0.0"/>
+    </neuron>
+    <neuron position="11">
+      <connection neuronIndex="0" layerIndex="0" weight="0.32527131951868277"/>
+      <connection neuronIndex="1" layerIndex="0" weight="0.0895692320467526"/>
+      <connection neuronIndex="2" layerIndex="0" weight="0.25932206797637763"/>
+      <connection neuronIndex="3" layerIndex="0" weight="0.29554115273767295"/>
+      <connection neuronIndex="4" layerIndex="0" weight="-0.31869111694537944"/>
+      <connection neuronIndex="5" layerIndex="0" weight="-0.16989192874369724"/>
+      <connection neuronIndex="6" layerIndex="0" weight="0.08946697288811467"/>
+      <connection neuronIndex="7" layerIndex="0" weight="0.22318207309523902"/>
+      <connection neuronIndex="8" layerIndex="0" weight="0.12144254779762964"/>
+      <connection neuronIndex="9" layerIndex="0" weight="0.20431197268357232"/>
+      <connection neuronIndex="10" layerIndex="0" weight="0.20396294094560025"/>
+      <connection neuronIndex="11" layerIndex="0" weight="0.12140916928145346"/>
+      <connection neuronIndex="12" layerIndex="0" weight="0.052263389078589184"/>
+      <connection neuronIndex="13" layerIndex="0" weight="-0.2953363617468849"/>
+      <connection neuronIndex="14" layerIndex="0" weight="-0.08118876867002789"/>
+      <connection neuronIndex="15" layerIndex="0" weight="0.07519129801747304"/>
+      <connection neuronIndex="16" layerIndex="0" weight="-0.023587169127365304"/>
+      <connection neuronIndex="17" layerIndex="0" weight="-0.24055023839038497"/>
+      <connection neuronIndex="18" layerIndex="0" weight="0.14772676690355652"/>
+      <connection neuronIndex="19" layerIndex="0" weight="0.23301154636978533"/>
+      <connection neuronIndex="20" layerIndex="0" weight="0.0508943692117268"/>
+      <connection neuronIndex="21" layerIndex="0" weight="0.18547961532349094"/>
+      <connection neuronIndex="22" layerIndex="0" weight="0.05215487074421027"/>
+      <connection neuronIndex="23" layerIndex="0" weight="-0.024661433138762623"/>
+      <connection neuronIndex="24" layerIndex="0" weight="-0.20773517292125177"/>
+      <connection neuronIndex="25" layerIndex="0" weight="0.09057429761960017"/>
+      <connection neuronIndex="26" layerIndex="0" weight="-0.19836310825157424"/>
+      <connection neuronIndex="27" layerIndex="0" weight="-0.10944455278855339"/>
+      <connection neuronIndex="28" layerIndex="0" weight="-0.0712952529521958"/>
+      <connection neuronIndex="29" layerIndex="0" weight="0.2623570743307569"/>
+      <connection neuronIndex="30" layerIndex="0" weight="0.1964289938079407"/>
+      <connection neuronIndex="31" layerIndex="0" weight="-0.04743632840082018"/>
+      <connection neuronIndex="32" layerIndex="0" weight="-0.20681429503887858"/>
+      <connection neuronIndex="33" layerIndex="0" weight="-0.22301610266159583"/>
+      <connection neuronIndex="34" layerIndex="0" weight="-0.18704741580990392"/>
+      <connection neuronIndex="35" layerIndex="0" weight="-0.15473363267831855"/>
+      <connection neuronIndex="36" layerIndex="0" weight="0.16640811579153036"/>
+      <connection neuronIndex="37" layerIndex="0" weight="0.039379399137365545"/>
+      <connection neuronIndex="38" layerIndex="0" weight="0.241328388527641"/>
+      <connection neuronIndex="39" layerIndex="0" weight="0.11277440728976784"/>
+      <connection neuronIndex="40" layerIndex="0" weight="-0.3208988363726685"/>
+      <connection neuronIndex="41" layerIndex="0" weight="-0.2594781625876505"/>
+      <connection neuronIndex="42" layerIndex="0" weight="0.2582246887494594"/>
+      <connection neuronIndex="43" layerIndex="0" weight="0.17186573515672393"/>
+      <connection neuronIndex="44" layerIndex="0" weight="-0.03301544140464069"/>
+      <connection neuronIndex="45" layerIndex="0" weight="-0.11145359560894821"/>
+      <connection neuronIndex="46" layerIndex="0" weight="0.07352398484819245"/>
+      <connection neuronIndex="47" layerIndex="0" weight="-0.20751932882332114"/>
+      <connection neuronIndex="48" layerIndex="0" weight="-0.2389555728051817"/>
+      <connection neuronIndex="49" layerIndex="0" weight="-0.24310247441745603"/>
+      <connection neuronIndex="50" layerIndex="0" weight="-0.20307009796130274"/>
+      <connection neuronIndex="51" layerIndex="0" weight="0.08278330966253694"/>
+      <connection neuronIndex="52" layerIndex="0" weight="-0.28779393727527147"/>
+      <connection neuronIndex="53" layerIndex="0" weight="0.2639866346397404"/>
+      <bias value="1.0" weight="0.0"/>
+    </neuron>
+    <neuron position="12">
+      <connection neuronIndex="0" layerIndex="0" weight="0.2800923185393099"/>
+      <connection neuronIndex="1" layerIndex="0" weight="-0.07638955515078172"/>
+      <connection neuronIndex="2" layerIndex="0" weight="-0.24623483163835364"/>
+      <connection neuronIndex="3" layerIndex="0" weight="0.07594756087345333"/>
+      <connection neuronIndex="4" layerIndex="0" weight="-0.11818358477967186"/>
+      <connection neuronIndex="5" layerIndex="0" weight="0.057712607234786606"/>
+      <connection neuronIndex="6" layerIndex="0" weight="0.2990737561898515"/>
+      <connection neuronIndex="7" layerIndex="0" weight="-0.13598338932783596"/>
+      <connection neuronIndex="8" layerIndex="0" weight="-0.08658816211776202"/>
+      <connection neuronIndex="9" layerIndex="0" weight="0.06529493036890638"/>
+      <connection neuronIndex="10" layerIndex="0" weight="-0.20778606443436382"/>
+      <connection neuronIndex="11" layerIndex="0" weight="0.26195974524787907"/>
+      <connection neuronIndex="12" layerIndex="0" weight="-0.25504401344064864"/>
+      <connection neuronIndex="13" layerIndex="0" weight="0.31812585694088974"/>
+      <connection neuronIndex="14" layerIndex="0" weight="0.16203244775010106"/>
+      <connection neuronIndex="15" layerIndex="0" weight="0.08065130654209507"/>
+      <connection neuronIndex="16" layerIndex="0" weight="0.1920174846276677"/>
+      <connection neuronIndex="17" layerIndex="0" weight="-0.10448350956534763"/>
+      <connection neuronIndex="18" layerIndex="0" weight="-0.14598843527602612"/>
+      <connection neuronIndex="19" layerIndex="0" weight="0.27009628007351566"/>
+      <connection neuronIndex="20" layerIndex="0" weight="-0.19042011896357897"/>
+      <connection neuronIndex="21" layerIndex="0" weight="-0.30954231671472376"/>
+      <connection neuronIndex="22" layerIndex="0" weight="-0.2148500600893917"/>
+      <connection neuronIndex="23" layerIndex="0" weight="0.17206785782299377"/>
+      <connection neuronIndex="24" layerIndex="0" weight="-0.061372682714811555"/>
+      <connection neuronIndex="25" layerIndex="0" weight="-0.2643027476941894"/>
+      <connection neuronIndex="26" layerIndex="0" weight="0.2158922021996908"/>
+      <connection neuronIndex="27" layerIndex="0" weight="-0.11690606059584616"/>
+      <connection neuronIndex="28" layerIndex="0" weight="0.009200914867085908"/>
+      <connection neuronIndex="29" layerIndex="0" weight="-0.0021468743733639717"/>
+      <connection neuronIndex="30" layerIndex="0" weight="-0.23106193823429103"/>
+      <connection neuronIndex="31" layerIndex="0" weight="0.14027517400393175"/>
+      <connection neuronIndex="32" layerIndex="0" weight="0.27496045181176315"/>
+      <connection neuronIndex="33" layerIndex="0" weight="0.015514509182847025"/>
+      <connection neuronIndex="34" layerIndex="0" weight="-0.10217795412063174"/>
+      <connection neuronIndex="35" layerIndex="0" weight="-0.2700655553407991"/>
+      <connection neuronIndex="36" layerIndex="0" weight="0.08884296026499738"/>
+      <connection neuronIndex="37" layerIndex="0" weight="0.023644128739683246"/>
+      <connection neuronIndex="38" layerIndex="0" weight="0.2725420272366323"/>
+      <connection neuronIndex="39" layerIndex="0" weight="0.3277718877177755"/>
+      <connection neuronIndex="40" layerIndex="0" weight="0.30733525872870476"/>
+      <connection neuronIndex="41" layerIndex="0" weight="0.2613902619203123"/>
+      <connection neuronIndex="42" layerIndex="0" weight="0.2755368283808061"/>
+      <connection neuronIndex="43" layerIndex="0" weight="0.2743339669631217"/>
+      <connection neuronIndex="44" layerIndex="0" weight="-0.08531307344054886"/>
+      <connection neuronIndex="45" layerIndex="0" weight="-0.2155348625521058"/>
+      <connection neuronIndex="46" layerIndex="0" weight="0.002230016158006498"/>
+      <connection neuronIndex="47" layerIndex="0" weight="-0.25454239215180596"/>
+      <connection neuronIndex="48" layerIndex="0" weight="0.07862849866307958"/>
+      <connection neuronIndex="49" layerIndex="0" weight="0.06671554781064754"/>
+      <connection neuronIndex="50" layerIndex="0" weight="0.10556174525079859"/>
+      <connection neuronIndex="51" layerIndex="0" weight="0.14265446884289434"/>
+      <connection neuronIndex="52" layerIndex="0" weight="-0.21628307166279304"/>
+      <connection neuronIndex="53" layerIndex="0" weight="0.17932089741229745"/>
+      <bias value="1.0" weight="0.0"/>
+    </neuron>
+    <neuron position="13">
+      <connection neuronIndex="0" layerIndex="0" weight="-0.12328203622805883"/>
+      <connection neuronIndex="1" layerIndex="0" weight="-0.20291438067447354"/>
+      <connection neuronIndex="2" layerIndex="0" weight="-0.20218909390725442"/>
+      <connection neuronIndex="3" layerIndex="0" weight="-0.27565377748883585"/>
+      <connection neuronIndex="4" layerIndex="0" weight="-0.13480356915707373"/>
+      <connection neuronIndex="5" layerIndex="0" weight="0.190589085620752"/>
+      <connection neuronIndex="6" layerIndex="0" weight="0.14580622633091306"/>
+      <connection neuronIndex="7" layerIndex="0" weight="0.11132312836262309"/>
+      <connection neuronIndex="8" layerIndex="0" weight="-0.13816020070513865"/>
+      <connection neuronIndex="9" layerIndex="0" weight="0.09068738535948528"/>
+      <connection neuronIndex="10" layerIndex="0" weight="0.019671530802113646"/>
+      <connection neuronIndex="11" layerIndex="0" weight="0.1334368584049878"/>
+      <connection neuronIndex="12" layerIndex="0" weight="0.08581246281719623"/>
+      <connection neuronIndex="13" layerIndex="0" weight="-0.17364448374730634"/>
+      <connection neuronIndex="14" layerIndex="0" weight="0.27004586201767505"/>
+      <connection neuronIndex="15" layerIndex="0" weight="-0.0017706267663121777"/>
+      <connection neuronIndex="16" layerIndex="0" weight="-0.16264773802415428"/>
+      <connection neuronIndex="17" layerIndex="0" weight="0.24346418370872575"/>
+      <connection neuronIndex="18" layerIndex="0" weight="-0.29414791073170776"/>
+      <connection neuronIndex="19" layerIndex="0" weight="-0.09400207632721566"/>
+      <connection neuronIndex="20" layerIndex="0" weight="-0.24761919315259145"/>
+      <connection neuronIndex="21" layerIndex="0" weight="0.2114840001742178"/>
+      <connection neuronIndex="22" layerIndex="0" weight="-0.2564963913372177"/>
+      <connection neuronIndex="23" layerIndex="0" weight="-0.04890465793769738"/>
+      <connection neuronIndex="24" layerIndex="0" weight="0.25878882227167094"/>
+      <connection neuronIndex="25" layerIndex="0" weight="0.2405384160496336"/>
+      <connection neuronIndex="26" layerIndex="0" weight="-0.026840282436133456"/>
+      <connection neuronIndex="27" layerIndex="0" weight="0.18837493030551283"/>
+      <connection neuronIndex="28" layerIndex="0" weight="0.1978661489243589"/>
+      <connection neuronIndex="29" layerIndex="0" weight="0.3183970633331538"/>
+      <connection neuronIndex="30" layerIndex="0" weight="-0.16466990535285478"/>
+      <connection neuronIndex="31" layerIndex="0" weight="0.20420166591357863"/>
+      <connection neuronIndex="32" layerIndex="0" weight="0.23492408577687024"/>
+      <connection neuronIndex="33" layerIndex="0" weight="-0.10565166455540051"/>
+      <connection neuronIndex="34" layerIndex="0" weight="-0.1979545890668409"/>
+      <connection neuronIndex="35" layerIndex="0" weight="0.17376444421472165"/>
+      <connection neuronIndex="36" layerIndex="0" weight="-0.17072041893633408"/>
+      <connection neuronIndex="37" layerIndex="0" weight="0.009951291819837615"/>
+      <connection neuronIndex="38" layerIndex="0" weight="0.08085960955334975"/>
+      <connection neuronIndex="39" layerIndex="0" weight="0.10179814993926972"/>
+      <connection neuronIndex="40" layerIndex="0" weight="0.3145885091860838"/>
+      <connection neuronIndex="41" layerIndex="0" weight="0.3103061260321394"/>
+      <connection neuronIndex="42" layerIndex="0" weight="0.14457494291795386"/>
+      <connection neuronIndex="43" layerIndex="0" weight="-0.11097144488967833"/>
+      <connection neuronIndex="44" layerIndex="0" weight="0.21738428781556124"/>
+      <connection neuronIndex="45" layerIndex="0" weight="0.1839387162247022"/>
+      <connection neuronIndex="46" layerIndex="0" weight="-0.25273189489128667"/>
+      <connection neuronIndex="47" layerIndex="0" weight="0.22434002355326138"/>
+      <connection neuronIndex="48" layerIndex="0" weight="-0.011143261494998224"/>
+      <connection neuronIndex="49" layerIndex="0" weight="0.06782975261635527"/>
+      <connection neuronIndex="50" layerIndex="0" weight="0.1054609019712357"/>
+      <connection neuronIndex="51" layerIndex="0" weight="-0.3213817915065924"/>
+      <connection neuronIndex="52" layerIndex="0" weight="0.2959928253379455"/>
+      <connection neuronIndex="53" layerIndex="0" weight="0.27527537624703363"/>
+      <bias value="1.0" weight="0.0"/>
+    </neuron>
+    <neuron position="14">
+      <connection neuronIndex="0" layerIndex="0" weight="-0.1882337779844487"/>
+      <connection neuronIndex="1" layerIndex="0" weight="0.26223647368839137"/>
+      <connection neuronIndex="2" layerIndex="0" weight="0.035616405393426975"/>
+      <connection neuronIndex="3" layerIndex="0" weight="0.22624587998689522"/>
+      <connection neuronIndex="4" layerIndex="0" weight="-0.12275629474258778"/>
+      <connection neuronIndex="5" layerIndex="0" weight="0.2965416273233718"/>
+      <connection neuronIndex="6" layerIndex="0" weight="-0.07624556232302127"/>
+      <connection neuronIndex="7" layerIndex="0" weight="0.0787301575504944"/>
+      <connection neuronIndex="8" layerIndex="0" weight="-0.1892393762936144"/>
+      <connection neuronIndex="9" layerIndex="0" weight="-0.15099268528926196"/>
+      <connection neuronIndex="10" layerIndex="0" weight="0.14861627683725448"/>
+      <connection neuronIndex="11" layerIndex="0" weight="0.13353557118117404"/>
+      <connection neuronIndex="12" layerIndex="0" weight="-0.32763660258040833"/>
+      <connection neuronIndex="13" layerIndex="0" weight="0.3098558594213639"/>
+      <connection neuronIndex="14" layerIndex="0" weight="-0.16391484311270854"/>
+      <connection neuronIndex="15" layerIndex="0" weight="-0.13648564942741814"/>
+      <connection neuronIndex="16" layerIndex="0" weight="0.006920857300774574"/>
+      <connection neuronIndex="17" layerIndex="0" weight="-0.012119761308829302"/>
+      <connection neuronIndex="18" layerIndex="0" weight="0.10348828740515242"/>
+      <connection neuronIndex="19" layerIndex="0" weight="-0.0877605878596531"/>
+      <connection neuronIndex="20" layerIndex="0" weight="-0.22082799149302157"/>
+      <connection neuronIndex="21" layerIndex="0" weight="0.17886176074783428"/>
+      <connection neuronIndex="22" layerIndex="0" weight="-0.23480692746279158"/>
+      <connection neuronIndex="23" layerIndex="0" weight="-0.012233987387700318"/>
+      <connection neuronIndex="24" layerIndex="0" weight="-0.24145540881431732"/>
+      <connection neuronIndex="25" layerIndex="0" weight="0.16930181648796527"/>
+      <connection neuronIndex="26" layerIndex="0" weight="-0.20913472493978288"/>
+      <connection neuronIndex="27" layerIndex="0" weight="0.2244292849143405"/>
+      <connection neuronIndex="28" layerIndex="0" weight="0.12391370942187807"/>
+      <connection neuronIndex="29" layerIndex="0" weight="-0.3283407942878004"/>
+      <connection neuronIndex="30" layerIndex="0" weight="0.0019326092332562772"/>
+      <connection neuronIndex="31" layerIndex="0" weight="0.06747341326005668"/>
+      <connection neuronIndex="32" layerIndex="0" weight="0.2152399719799039"/>
+      <connection neuronIndex="33" layerIndex="0" weight="0.10357536478770923"/>
+      <connection neuronIndex="34" layerIndex="0" weight="-0.10333754466564593"/>
+      <connection neuronIndex="35" layerIndex="0" weight="-0.03486174572072476"/>
+      <connection neuronIndex="36" layerIndex="0" weight="-0.22849141938064507"/>
+      <connection neuronIndex="37" layerIndex="0" weight="0.0870398593883146"/>
+      <connection neuronIndex="38" layerIndex="0" weight="0.3009624694064181"/>
+      <connection neuronIndex="39" layerIndex="0" weight="-0.07700068141221872"/>
+      <connection neuronIndex="40" layerIndex="0" weight="-0.32676519468796444"/>
+      <connection neuronIndex="41" layerIndex="0" weight="-0.2997820891161589"/>
+      <connection neuronIndex="42" layerIndex="0" weight="-0.10030046002431348"/>
+      <connection neuronIndex="43" layerIndex="0" weight="0.20518709681428587"/>
+      <connection neuronIndex="44" layerIndex="0" weight="0.20780091163838516"/>
+      <connection neuronIndex="45" layerIndex="0" weight="0.2703744992476647"/>
+      <connection neuronIndex="46" layerIndex="0" weight="-0.13989739206594543"/>
+      <connection neuronIndex="47" layerIndex="0" weight="0.21901612641282858"/>
+      <connection neuronIndex="48" layerIndex="0" weight="0.16051602276673232"/>
+      <connection neuronIndex="49" layerIndex="0" weight="-0.2921046326859104"/>
+      <connection neuronIndex="50" layerIndex="0" weight="0.03279246911115974"/>
+      <connection neuronIndex="51" layerIndex="0" weight="0.20707168169501217"/>
+      <connection neuronIndex="52" layerIndex="0" weight="0.034289994840033866"/>
+      <connection neuronIndex="53" layerIndex="0" weight="-0.10413878374331209"/>
+      <bias value="1.0" weight="0.0"/>
+    </neuron>
+    <neuron position="15">
+      <connection neuronIndex="0" layerIndex="0" weight="0.2948718102697507"/>
+      <connection neuronIndex="1" layerIndex="0" weight="0.08301905521060748"/>
+      <connection neuronIndex="2" layerIndex="0" weight="0.31186375091406576"/>
+      <connection neuronIndex="3" layerIndex="0" weight="-0.045137759696040614"/>
+      <connection neuronIndex="4" layerIndex="0" weight="-0.10732226373491593"/>
+      <connection neuronIndex="5" layerIndex="0" weight="-0.14768466548607426"/>
+      <connection neuronIndex="6" layerIndex="0" weight="-0.14786878158179398"/>
+      <connection neuronIndex="7" layerIndex="0" weight="-0.042785303144709685"/>
+      <connection neuronIndex="8" layerIndex="0" weight="0.24172507735084353"/>
+      <connection neuronIndex="9" layerIndex="0" weight="-0.2829813120366337"/>
+      <connection neuronIndex="10" layerIndex="0" weight="-0.24467120501706274"/>
+      <connection neuronIndex="11" layerIndex="0" weight="-0.1317077269437627"/>
+      <connection neuronIndex="12" layerIndex="0" weight="0.28789220834771184"/>
+      <connection neuronIndex="13" layerIndex="0" weight="0.1999779506557075"/>
+      <connection neuronIndex="14" layerIndex="0" weight="-0.19756195650661912"/>
+      <connection neuronIndex="15" layerIndex="0" weight="-0.007475366149105267"/>
+      <connection neuronIndex="16" layerIndex="0" weight="0.25875485557203576"/>
+      <connection neuronIndex="17" layerIndex="0" weight="0.14200719884626373"/>
+      <connection neuronIndex="18" layerIndex="0" weight="-0.1130985882409844"/>
+      <connection neuronIndex="19" layerIndex="0" weight="0.03316495588957019"/>
+      <connection neuronIndex="20" layerIndex="0" weight="-0.13816698542740047"/>
+      <connection neuronIndex="21" layerIndex="0" weight="0.06090033209576101"/>
+      <connection neuronIndex="22" layerIndex="0" weight="-0.05311282985465887"/>
+      <connection neuronIndex="23" layerIndex="0" weight="0.22185290621196924"/>
+      <connection neuronIndex="24" layerIndex="0" weight="-0.049126151403120155"/>
+      <connection neuronIndex="25" layerIndex="0" weight="-0.26961401060150275"/>
+      <connection neuronIndex="26" layerIndex="0" weight="0.06269888690519199"/>
+      <connection neuronIndex="27" layerIndex="0" weight="-0.02899075955263719"/>
+      <connection neuronIndex="28" layerIndex="0" weight="-0.2667687183039148"/>
+      <connection neuronIndex="29" layerIndex="0" weight="-0.11230343269156637"/>
+      <connection neuronIndex="30" layerIndex="0" weight="0.058751241194184456"/>
+      <connection neuronIndex="31" layerIndex="0" weight="-0.0057338544969606775"/>
+      <connection neuronIndex="32" layerIndex="0" weight="0.08759450058572682"/>
+      <connection neuronIndex="33" layerIndex="0" weight="0.14281217209312314"/>
+      <connection neuronIndex="34" layerIndex="0" weight="-0.06873139666851896"/>
+      <connection neuronIndex="35" layerIndex="0" weight="-0.03200556561432755"/>
+      <connection neuronIndex="36" layerIndex="0" weight="-0.2194998162546077"/>
+      <connection neuronIndex="37" layerIndex="0" weight="-0.3048377655189973"/>
+      <connection neuronIndex="38" layerIndex="0" weight="-0.21944999803839702"/>
+      <connection neuronIndex="39" layerIndex="0" weight="0.3214448134904719"/>
+      <connection neuronIndex="40" layerIndex="0" weight="-0.22507161302865122"/>
+      <connection neuronIndex="41" layerIndex="0" weight="0.19720651808285067"/>
+      <connection neuronIndex="42" layerIndex="0" weight="-0.0916214203010216"/>
+      <connection neuronIndex="43" layerIndex="0" weight="0.22856419219538487"/>
+      <connection neuronIndex="44" layerIndex="0" weight="-0.22289612259423258"/>
+      <connection neuronIndex="45" layerIndex="0" weight="0.19564318925006657"/>
+      <connection neuronIndex="46" layerIndex="0" weight="-0.24058082340227796"/>
+      <connection neuronIndex="47" layerIndex="0" weight="-0.27157393507691896"/>
+      <connection neuronIndex="48" layerIndex="0" weight="0.23306814677580984"/>
+      <connection neuronIndex="49" layerIndex="0" weight="0.30701372733979443"/>
+      <connection neuronIndex="50" layerIndex="0" weight="-0.3299265812793508"/>
+      <connection neuronIndex="51" layerIndex="0" weight="0.029070712735435766"/>
+      <connection neuronIndex="52" layerIndex="0" weight="-0.1336519102586464"/>
+      <connection neuronIndex="53" layerIndex="0" weight="-0.029065044522832706"/>
+      <bias value="1.0" weight="0.0"/>
+    </neuron>
+    <neuron position="16">
+      <connection neuronIndex="0" layerIndex="0" weight="-0.2089531832869705"/>
+      <connection neuronIndex="1" layerIndex="0" weight="-0.021491723947334562"/>
+      <connection neuronIndex="2" layerIndex="0" weight="-0.039327832027303056"/>
+      <connection neuronIndex="3" layerIndex="0" weight="0.11806503048419464"/>
+      <connection neuronIndex="4" layerIndex="0" weight="-0.2933983300064118"/>
+      <connection neuronIndex="5" layerIndex="0" weight="-0.22447512077110154"/>
+      <connection neuronIndex="6" layerIndex="0" weight="0.303551706972881"/>
+      <connection neuronIndex="7" layerIndex="0" weight="0.282664752207857"/>
+      <connection neuronIndex="8" layerIndex="0" weight="-0.2645424128473526"/>
+      <connection neuronIndex="9" layerIndex="0" weight="0.17477514146622014"/>
+      <connection neuronIndex="10" layerIndex="0" weight="0.17953406323052196"/>
+      <connection neuronIndex="11" layerIndex="0" weight="0.10078784800837937"/>
+      <connection neuronIndex="12" layerIndex="0" weight="-0.3093542068773411"/>
+      <connection neuronIndex="13" layerIndex="0" weight="-0.30449187792502097"/>
+      <connection neuronIndex="14" layerIndex="0" weight="0.12403317337040337"/>
+      <connection neuronIndex="15" layerIndex="0" weight="-0.044194634813053135"/>
+      <connection neuronIndex="16" layerIndex="0" weight="-0.0810737658322945"/>
+      <connection neuronIndex="17" layerIndex="0" weight="0.22122140958537645"/>
+      <connection neuronIndex="18" layerIndex="0" weight="-0.18237731944315355"/>
+      <connection neuronIndex="19" layerIndex="0" weight="-0.0020408110469398166"/>
+      <connection neuronIndex="20" layerIndex="0" weight="0.05123666475013733"/>
+      <connection neuronIndex="21" layerIndex="0" weight="0.011336573664776695"/>
+      <connection neuronIndex="22" layerIndex="0" weight="-0.10834054887034653"/>
+      <connection neuronIndex="23" layerIndex="0" weight="0.174681626216797"/>
+      <connection neuronIndex="24" layerIndex="0" weight="-0.09997880302494644"/>
+      <connection neuronIndex="25" layerIndex="0" weight="0.08958439531129181"/>
+      <connection neuronIndex="26" layerIndex="0" weight="-0.06441782708136584"/>
+      <connection neuronIndex="27" layerIndex="0" weight="-0.23451878121200748"/>
+      <connection neuronIndex="28" layerIndex="0" weight="-0.13887499930536207"/>
+      <connection neuronIndex="29" layerIndex="0" weight="0.2282826371847037"/>
+      <connection neuronIndex="30" layerIndex="0" weight="-0.027754164146219895"/>
+      <connection neuronIndex="31" layerIndex="0" weight="-0.27571389895181436"/>
+      <connection neuronIndex="32" layerIndex="0" weight="0.15967718065464248"/>
+      <connection neuronIndex="33" layerIndex="0" weight="-0.27819399232637987"/>
+      <connection neuronIndex="34" layerIndex="0" weight="0.11666597304764054"/>
+      <connection neuronIndex="35" layerIndex="0" weight="-0.09769401979018419"/>
+      <connection neuronIndex="36" layerIndex="0" weight="0.26111817165375456"/>
+      <connection neuronIndex="37" layerIndex="0" weight="0.3069355678537115"/>
+      <connection neuronIndex="38" layerIndex="0" weight="-0.2606708490286167"/>
+      <connection neuronIndex="39" layerIndex="0" weight="-0.2610701389362967"/>
+      <connection neuronIndex="40" layerIndex="0" weight="-0.2314718104457519"/>
+      <connection neuronIndex="41" layerIndex="0" weight="2.570983010842798E-4"/>
+      <connection neuronIndex="42" layerIndex="0" weight="0.09753942067356747"/>
+      <connection neuronIndex="43" layerIndex="0" weight="-0.2216533537509387"/>
+      <connection neuronIndex="44" layerIndex="0" weight="0.1456785184416335"/>
+      <connection neuronIndex="45" layerIndex="0" weight="0.3122691555914831"/>
+      <connection neuronIndex="46" layerIndex="0" weight="-0.13445156282217768"/>
+      <connection neuronIndex="47" layerIndex="0" weight="0.04841899853084375"/>
+      <connection neuronIndex="48" layerIndex="0" weight="-5.551666837570468E-4"/>
+      <connection neuronIndex="49" layerIndex="0" weight="-0.2455077445628507"/>
+      <connection neuronIndex="50" layerIndex="0" weight="0.07792575348498693"/>
+      <connection neuronIndex="51" layerIndex="0" weight="-0.07414169185470881"/>
+      <connection neuronIndex="52" layerIndex="0" weight="-0.2245393715144035"/>
+      <connection neuronIndex="53" layerIndex="0" weight="0.06270960455428803"/>
+      <bias value="1.0" weight="0.0"/>
+    </neuron>
+    <neuron position="17">
+      <connection neuronIndex="0" layerIndex="0" weight="-0.28506740438309375"/>
+      <connection neuronIndex="1" layerIndex="0" weight="-0.321912690712673"/>
+      <connection neuronIndex="2" layerIndex="0" weight="-0.317307829110313"/>
+      <connection neuronIndex="3" layerIndex="0" weight="-0.2107696987162891"/>
+      <connection neuronIndex="4" layerIndex="0" weight="-0.17435047416926458"/>
+      <connection neuronIndex="5" layerIndex="0" weight="0.030063749070189827"/>
+      <connection neuronIndex="6" layerIndex="0" weight="-0.11938617336603657"/>
+      <connection neuronIndex="7" layerIndex="0" weight="0.10553045653903903"/>
+      <connection neuronIndex="8" layerIndex="0" weight="-0.17997865776934563"/>
+      <connection neuronIndex="9" layerIndex="0" weight="0.0585186353450835"/>
+      <connection neuronIndex="10" layerIndex="0" weight="0.0339936641246365"/>
+      <connection neuronIndex="11" layerIndex="0" weight="-0.2951010541119163"/>
+      <connection neuronIndex="12" layerIndex="0" weight="-0.06421867079779608"/>
+      <connection neuronIndex="13" layerIndex="0" weight="0.2902720170854152"/>
+      <connection neuronIndex="14" layerIndex="0" weight="-0.05507007852891793"/>
+      <connection neuronIndex="15" layerIndex="0" weight="0.11119825078256346"/>
+      <connection neuronIndex="16" layerIndex="0" weight="-0.08790317092315861"/>
+      <connection neuronIndex="17" layerIndex="0" weight="0.28507710558649574"/>
+      <connection neuronIndex="18" layerIndex="0" weight="0.2610122900762199"/>
+      <connection neuronIndex="19" layerIndex="0" weight="-0.1395390989769519"/>
+      <connection neuronIndex="20" layerIndex="0" weight="0.232669175382815"/>
+      <connection neuronIndex="21" layerIndex="0" weight="-0.24513833828737858"/>
+      <connection neuronIndex="22" layerIndex="0" weight="0.16781373611544687"/>
+      <connection neuronIndex="23" layerIndex="0" weight="-0.0035381014825717205"/>
+      <connection neuronIndex="24" layerIndex="0" weight="0.23108681919969093"/>
+      <connection neuronIndex="25" layerIndex="0" weight="-0.15188584291500043"/>
+      <connection neuronIndex="26" layerIndex="0" weight="-0.1294253858143631"/>
+      <connection neuronIndex="27" layerIndex="0" weight="-0.17723811880776252"/>
+      <connection neuronIndex="28" layerIndex="0" weight="0.3247926657880264"/>
+      <connection neuronIndex="29" layerIndex="0" weight="-0.02463352758566817"/>
+      <connection neuronIndex="30" layerIndex="0" weight="-0.061859897978225775"/>
+      <connection neuronIndex="31" layerIndex="0" weight="0.08625563506407241"/>
+      <connection neuronIndex="32" layerIndex="0" weight="-0.2098518842987871"/>
+      <connection neuronIndex="33" layerIndex="0" weight="0.08444742269400757"/>
+      <connection neuronIndex="34" layerIndex="0" weight="0.15146387446388831"/>
+      <connection neuronIndex="35" layerIndex="0" weight="-0.27991735815705193"/>
+      <connection neuronIndex="36" layerIndex="0" weight="-0.012732264109732994"/>
+      <connection neuronIndex="37" layerIndex="0" weight="-0.2020105835633493"/>
+      <connection neuronIndex="38" layerIndex="0" weight="-0.1615870584475133"/>
+      <connection neuronIndex="39" layerIndex="0" weight="0.01804301406928338"/>
+      <connection neuronIndex="40" layerIndex="0" weight="-0.17694058134122648"/>
+      <connection neuronIndex="41" layerIndex="0" weight="-0.302185511101934"/>
+      <connection neuronIndex="42" layerIndex="0" weight="-0.3051264575247297"/>
+      <connection neuronIndex="43" layerIndex="0" weight="-0.2739376886410406"/>
+      <connection neuronIndex="44" layerIndex="0" weight="-0.03307357338367367"/>
+      <connection neuronIndex="45" layerIndex="0" weight="0.13215192528801778"/>
+      <connection neuronIndex="46" layerIndex="0" weight="-0.19246798708478083"/>
+      <connection neuronIndex="47" layerIndex="0" weight="0.20747491829263615"/>
+      <connection neuronIndex="48" layerIndex="0" weight="-0.034746776068529495"/>
+      <connection neuronIndex="49" layerIndex="0" weight="0.18800036262036052"/>
+      <connection neuronIndex="50" layerIndex="0" weight="-0.17646498345730802"/>
+      <connection neuronIndex="51" layerIndex="0" weight="0.20419975573136045"/>
+      <connection neuronIndex="52" layerIndex="0" weight="0.1450836194414773"/>
+      <connection neuronIndex="53" layerIndex="0" weight="0.1315258230757333"/>
+      <bias value="1.0" weight="0.0"/>
+    </neuron>
+    <neuron position="18">
+      <connection neuronIndex="0" layerIndex="0" weight="-0.09897651386240147"/>
+      <connection neuronIndex="1" layerIndex="0" weight="0.19786926911392838"/>
+      <connection neuronIndex="2" layerIndex="0" weight="-0.2194932623308471"/>
+      <connection neuronIndex="3" layerIndex="0" weight="0.29551251814694685"/>
+      <connection neuronIndex="4" layerIndex="0" weight="0.31202716369959843"/>
+      <connection neuronIndex="5" layerIndex="0" weight="-0.13435090761757898"/>
+      <connection neuronIndex="6" layerIndex="0" weight="-0.033088826330971766"/>
+      <connection neuronIndex="7" layerIndex="0" weight="0.14757703051921428"/>
+      <connection neuronIndex="8" layerIndex="0" weight="-0.07454828217913506"/>
+      <connection neuronIndex="9" layerIndex="0" weight="0.32487220771032627"/>
+      <connection neuronIndex="10" layerIndex="0" weight="-0.22654691069771155"/>
+      <connection neuronIndex="11" layerIndex="0" weight="-6.889016471207654E-4"/>
+      <connection neuronIndex="12" layerIndex="0" weight="0.06517694552992254"/>
+      <connection neuronIndex="13" layerIndex="0" weight="-0.22146696051762244"/>
+      <connection neuronIndex="14" layerIndex="0" weight="0.1925702758436421"/>
+      <connection neuronIndex="15" layerIndex="0" weight="0.3077310800139231"/>
+      <connection neuronIndex="16" layerIndex="0" weight="-0.18199670695344422"/>
+      <connection neuronIndex="17" layerIndex="0" weight="0.07566045185615589"/>
+      <connection neuronIndex="18" layerIndex="0" weight="0.2373370453902937"/>
+      <connection neuronIndex="19" layerIndex="0" weight="0.25219295548423154"/>
+      <connection neuronIndex="20" layerIndex="0" weight="0.05840548287916986"/>
+      <connection neuronIndex="21" layerIndex="0" weight="-0.2873282529493417"/>
+      <connection neuronIndex="22" layerIndex="0" weight="0.0579226939001824"/>
+      <connection neuronIndex="23" layerIndex="0" weight="-0.26387500248862994"/>
+      <connection neuronIndex="24" layerIndex="0" weight="-0.2885083318541619"/>
+      <connection neuronIndex="25" layerIndex="0" weight="0.21143640253761126"/>
+      <connection neuronIndex="26" layerIndex="0" weight="0.2597251344992508"/>
+      <connection neuronIndex="27" layerIndex="0" weight="0.23274863948727315"/>
+      <connection neuronIndex="28" layerIndex="0" weight="0.10804619413126249"/>
+      <connection neuronIndex="29" layerIndex="0" weight="0.11149741364854016"/>
+      <connection neuronIndex="30" layerIndex="0" weight="0.06549244205951832"/>
+      <connection neuronIndex="31" layerIndex="0" weight="-0.14926053924621058"/>
+      <connection neuronIndex="32" layerIndex="0" weight="0.2566213984459365"/>
+      <connection neuronIndex="33" layerIndex="0" weight="-0.30331065137529967"/>
+      <connection neuronIndex="34" layerIndex="0" weight="0.2666369754053311"/>
+      <connection neuronIndex="35" layerIndex="0" weight="-0.20513679751279776"/>
+      <connection neuronIndex="36" layerIndex="0" weight="0.20771294951754132"/>
+      <connection neuronIndex="37" layerIndex="0" weight="-0.05830336078553916"/>
+      <connection neuronIndex="38" layerIndex="0" weight="-0.26608877009333015"/>
+      <connection neuronIndex="39" layerIndex="0" weight="-0.23807404363294327"/>
+      <connection neuronIndex="40" layerIndex="0" weight="-0.04096795294135974"/>
+      <connection neuronIndex="41" layerIndex="0" weight="0.30260003846945277"/>
+      <connection neuronIndex="42" layerIndex="0" weight="0.020167553236333402"/>
+      <connection neuronIndex="43" layerIndex="0" weight="0.10765140295573455"/>
+      <connection neuronIndex="44" layerIndex="0" weight="-0.15292132161434238"/>
+      <connection neuronIndex="45" layerIndex="0" weight="-0.024541334465127684"/>
+      <connection neuronIndex="46" layerIndex="0" weight="0.2195884536292289"/>
+      <connection neuronIndex="47" layerIndex="0" weight="0.21523325972059365"/>
+      <connection neuronIndex="48" layerIndex="0" weight="-0.21729711555750839"/>
+      <connection neuronIndex="49" layerIndex="0" weight="-0.01938481810972409"/>
+      <connection neuronIndex="50" layerIndex="0" weight="-0.08099942556212558"/>
+      <connection neuronIndex="51" layerIndex="0" weight="-0.3286549036520218"/>
+      <connection neuronIndex="52" layerIndex="0" weight="-0.027032849420907334"/>
+      <connection neuronIndex="53" layerIndex="0" weight="0.1275192456592163"/>
+      <bias value="1.0" weight="0.0"/>
+    </neuron>
+    <neuron position="19">
+      <connection neuronIndex="0" layerIndex="0" weight="-0.016323708449829277"/>
+      <connection neuronIndex="1" layerIndex="0" weight="0.009593037619355982"/>
+      <connection neuronIndex="2" layerIndex="0" weight="-0.07273243512498107"/>
+      <connection neuronIndex="3" layerIndex="0" weight="0.27330069999630285"/>
+      <connection neuronIndex="4" layerIndex="0" weight="0.11947680034700825"/>
+      <connection neuronIndex="5" layerIndex="0" weight="0.13254900147880694"/>
+      <connection neuronIndex="6" layerIndex="0" weight="-0.05132717588079677"/>
+      <connection neuronIndex="7" layerIndex="0" weight="0.09887085197250961"/>
+      <connection neuronIndex="8" layerIndex="0" weight="-0.2697139413310491"/>
+      <connection neuronIndex="9" layerIndex="0" weight="0.029317360730563402"/>
+      <connection neuronIndex="10" layerIndex="0" weight="0.2976363253480378"/>
+      <connection neuronIndex="11" layerIndex="0" weight="0.2203591184229194"/>
+      <connection neuronIndex="12" layerIndex="0" weight="0.2317093334184333"/>
+      <connection neuronIndex="13" layerIndex="0" weight="-0.02440825388785145"/>
+      <connection neuronIndex="14" layerIndex="0" weight="0.30826675490201355"/>
+      <connection neuronIndex="15" layerIndex="0" weight="-0.07726086209578792"/>
+      <connection neuronIndex="16" layerIndex="0" weight="0.29927909049023677"/>
+      <connection neuronIndex="17" layerIndex="0" weight="-0.17727383625183327"/>
+      <connection neuronIndex="18" layerIndex="0" weight="-0.31119930207526264"/>
+      <connection neuronIndex="19" layerIndex="0" weight="0.12804909544096899"/>
+      <connection neuronIndex="20" layerIndex="0" weight="-0.008736731970551082"/>
+      <connection neuronIndex="21" layerIndex="0" weight="-0.30620636626356695"/>
+      <connection neuronIndex="22" layerIndex="0" weight="-0.24561894107523208"/>
+      <connection neuronIndex="23" layerIndex="0" weight="-0.11973612785655122"/>
+      <connection neuronIndex="24" layerIndex="0" weight="-0.24800799506084092"/>
+      <connection neuronIndex="25" layerIndex="0" weight="0.1842109498638081"/>
+      <connection neuronIndex="26" layerIndex="0" weight="0.20093219666300283"/>
+      <connection neuronIndex="27" layerIndex="0" weight="0.26167257251561"/>
+      <connection neuronIndex="28" layerIndex="0" weight="0.2409072252239201"/>
+      <connection neuronIndex="29" layerIndex="0" weight="0.08519502930886502"/>
+      <connection neuronIndex="30" layerIndex="0" weight="0.007649111821083188"/>
+      <connection neuronIndex="31" layerIndex="0" weight="-0.11311674899267896"/>
+      <connection neuronIndex="32" layerIndex="0" weight="-0.31555622705348924"/>
+      <connection neuronIndex="33" layerIndex="0" weight="0.217568269533918"/>
+      <connection neuronIndex="34" layerIndex="0" weight="-0.17421217167155542"/>
+      <connection neuronIndex="35" layerIndex="0" weight="-0.18993207855175248"/>
+      <connection neuronIndex="36" layerIndex="0" weight="-0.019427655407254107"/>
+      <connection neuronIndex="37" layerIndex="0" weight="0.1643474847655078"/>
+      <connection neuronIndex="38" layerIndex="0" weight="-0.09144757988876123"/>
+      <connection neuronIndex="39" layerIndex="0" weight="0.009834598388412996"/>
+      <connection neuronIndex="40" layerIndex="0" weight="-0.24307798613919376"/>
+      <connection neuronIndex="41" layerIndex="0" weight="-0.20747475707783303"/>
+      <connection neuronIndex="42" layerIndex="0" weight="0.18786149057571938"/>
+      <connection neuronIndex="43" layerIndex="0" weight="0.0027136176175882043"/>
+      <connection neuronIndex="44" layerIndex="0" weight="0.14503405909659917"/>
+      <connection neuronIndex="45" layerIndex="0" weight="0.27941755006970154"/>
+      <connection neuronIndex="46" layerIndex="0" weight="-0.144319157874987"/>
+      <connection neuronIndex="47" layerIndex="0" weight="0.28236671408661457"/>
+      <connection neuronIndex="48" layerIndex="0" weight="0.15050834070983732"/>
+      <connection neuronIndex="49" layerIndex="0" weight="0.019530029499741808"/>
+      <connection neuronIndex="50" layerIndex="0" weight="-0.247186181887362"/>
+      <connection neuronIndex="51" layerIndex="0" weight="-0.039528946456669045"/>
+      <connection neuronIndex="52" layerIndex="0" weight="0.11523326613926671"/>
+      <connection neuronIndex="53" layerIndex="0" weight="-0.05533575411739394"/>
+      <bias value="1.0" weight="0.0"/>
+    </neuron>
+    <neuron position="20">
+      <connection neuronIndex="0" layerIndex="0" weight="0.2637443168756864"/>
+      <connection neuronIndex="1" layerIndex="0" weight="-0.0984093943841709"/>
+      <connection neuronIndex="2" layerIndex="0" weight="-0.05843510004439062"/>
+      <connection neuronIndex="3" layerIndex="0" weight="-0.001549721474326693"/>
+      <connection neuronIndex="4" layerIndex="0" weight="-0.051999909500524966"/>
+      <connection neuronIndex="5" layerIndex="0" weight="0.0765894880188252"/>
+      <connection neuronIndex="6" layerIndex="0" weight="0.13118000509211547"/>
+      <connection neuronIndex="7" layerIndex="0" weight="-0.028741122143074782"/>
+      <connection neuronIndex="8" layerIndex="0" weight="0.0655119879066603"/>
+      <connection neuronIndex="9" layerIndex="0" weight="0.2411333263812207"/>
+      <connection neuronIndex="10" layerIndex="0" weight="-0.11713333913908819"/>
+      <connection neuronIndex="11" layerIndex="0" weight="0.3017066377161202"/>
+      <connection neuronIndex="12" layerIndex="0" weight="0.24965676117543484"/>
+      <connection neuronIndex="13" layerIndex="0" weight="0.16348247338642236"/>
+      <connection neuronIndex="14" layerIndex="0" weight="-0.16163654175946138"/>
+      <connection neuronIndex="15" layerIndex="0" weight="0.1600461991614921"/>
+      <connection neuronIndex="16" layerIndex="0" weight="-0.12810539383169892"/>
+      <connection neuronIndex="17" layerIndex="0" weight="0.31746345723174524"/>
+      <connection neuronIndex="18" layerIndex="0" weight="0.2171860652240732"/>
+      <connection neuronIndex="19" layerIndex="0" weight="-0.3047055297869378"/>
+      <connection neuronIndex="20" layerIndex="0" weight="-0.09067799861317374"/>
+      <connection neuronIndex="21" layerIndex="0" weight="-0.007017135672541308"/>
+      <connection neuronIndex="22" layerIndex="0" weight="-0.205849737805324"/>
+      <connection neuronIndex="23" layerIndex="0" weight="-0.1202354617100424"/>
+      <connection neuronIndex="24" layerIndex="0" weight="-0.3072569979238655"/>
+      <connection neuronIndex="25" layerIndex="0" weight="0.1957337208769458"/>
+      <connection neuronIndex="26" layerIndex="0" weight="0.3266653808962727"/>
+      <connection neuronIndex="27" layerIndex="0" weight="-0.12357096517280006"/>
+      <connection neuronIndex="28" layerIndex="0" weight="-0.2349105962886044"/>
+      <connection neuronIndex="29" layerIndex="0" weight="0.10626372296451642"/>
+      <connection neuronIndex="30" layerIndex="0" weight="-0.08265794600409457"/>
+      <connection neuronIndex="31" layerIndex="0" weight="-0.14394582089764343"/>
+      <connection neuronIndex="32" layerIndex="0" weight="0.2809376591833999"/>
+      <connection neuronIndex="33" layerIndex="0" weight="0.3099707821253161"/>
+      <connection neuronIndex="34" layerIndex="0" weight="-0.24669030629455602"/>
+      <connection neuronIndex="35" layerIndex="0" weight="0.016008864367242748"/>
+      <connection neuronIndex="36" layerIndex="0" weight="0.23174866166328228"/>
+      <connection neuronIndex="37" layerIndex="0" weight="0.24703857022149062"/>
+      <connection neuronIndex="38" layerIndex="0" weight="-0.21915194540284552"/>
+      <connection neuronIndex="39" layerIndex="0" weight="-0.23578178722440662"/>
+      <connection neuronIndex="40" layerIndex="0" weight="0.13914335070259382"/>
+      <connection neuronIndex="41" layerIndex="0" weight="-0.20901350885207412"/>
+      <connection neuronIndex="42" layerIndex="0" weight="-0.1702104653105703"/>
+      <connection neuronIndex="43" layerIndex="0" weight="-0.2894251381922205"/>
+      <connection neuronIndex="44" layerIndex="0" weight="0.28927509171922666"/>
+      <connection neuronIndex="45" layerIndex="0" weight="-0.32879260352872053"/>
+      <connection neuronIndex="46" layerIndex="0" weight="0.24248769609605486"/>
+      <connection neuronIndex="47" layerIndex="0" weight="-0.13997487433693614"/>
+      <connection neuronIndex="48" layerIndex="0" weight="-0.20707513789781196"/>
+      <connection neuronIndex="49" layerIndex="0" weight="0.07891530762578963"/>
+      <connection neuronIndex="50" layerIndex="0" weight="0.02561734613215727"/>
+      <connection neuronIndex="51" layerIndex="0" weight="-0.04746537092691516"/>
+      <connection neuronIndex="52" layerIndex="0" weight="-0.22578948037246"/>
+      <connection neuronIndex="53" layerIndex="0" weight="0.09881580692057207"/>
+      <bias value="1.0" weight="0.0"/>
+    </neuron>
+    <neuron position="21">
+      <connection neuronIndex="0" layerIndex="0" weight="0.23667141964114385"/>
+      <connection neuronIndex="1" layerIndex="0" weight="0.2808678795161382"/>
+      <connection neuronIndex="2" layerIndex="0" weight="0.16466609946128496"/>
+      <connection neuronIndex="3" layerIndex="0" weight="0.23290490105958556"/>
+      <connection neuronIndex="4" layerIndex="0" weight="-0.11909699269809282"/>
+      <connection neuronIndex="5" layerIndex="0" weight="0.02889024218854258"/>
+      <connection neuronIndex="6" layerIndex="0" weight="-0.028918854368945535"/>
+      <connection neuronIndex="7" layerIndex="0" weight="0.11564372958252583"/>
+      <connection neuronIndex="8" layerIndex="0" weight="-0.16269953957725067"/>
+      <connection neuronIndex="9" layerIndex="0" weight="0.30736858028877784"/>
+      <connection neuronIndex="10" layerIndex="0" weight="-0.12846887898092899"/>
+      <connection neuronIndex="11" layerIndex="0" weight="0.09737388802399105"/>
+      <connection neuronIndex="12" layerIndex="0" weight="-0.17698309535183193"/>
+      <connection neuronIndex="13" layerIndex="0" weight="0.2832124635807362"/>
+      <connection neuronIndex="14" layerIndex="0" weight="0.29568392849019526"/>
+      <connection neuronIndex="15" layerIndex="0" weight="0.2903187632121654"/>
+      <connection neuronIndex="16" layerIndex="0" weight="-0.22109490064061146"/>
+      <connection neuronIndex="17" layerIndex="0" weight="0.1119536338380141"/>
+      <connection neuronIndex="18" layerIndex="0" weight="0.09289624931193863"/>
+      <connection neuronIndex="19" layerIndex="0" weight="-0.07061616513412078"/>
+      <connection neuronIndex="20" layerIndex="0" weight="0.10110688310806176"/>
+      <connection neuronIndex="21" layerIndex="0" weight="-0.2756795056006012"/>
+      <connection neuronIndex="22" layerIndex="0" weight="-0.18102251273884973"/>
+      <connection neuronIndex="23" layerIndex="0" weight="-0.12551613616139748"/>
+      <connection neuronIndex="24" layerIndex="0" weight="0.056052369678780745"/>
+      <connection neuronIndex="25" layerIndex="0" weight="-0.24030803613163015"/>
+      <connection neuronIndex="26" layerIndex="0" weight="-0.09652793045338992"/>
+      <connection neuronIndex="27" layerIndex="0" weight="-0.0066113167370782655"/>
+      <connection neuronIndex="28" layerIndex="0" weight="0.32407337411350917"/>
+      <connection neuronIndex="29" layerIndex="0" weight="0.02238282136560321"/>
+      <connection neuronIndex="30" layerIndex="0" weight="0.3032429610770339"/>
+      <connection neuronIndex="31" layerIndex="0" weight="0.012604694809768224"/>
+      <connection neuronIndex="32" layerIndex="0" weight="-0.23704309305404994"/>
+      <connection neuronIndex="33" layerIndex="0" weight="0.08480848482917158"/>
+      <connection neuronIndex="34" layerIndex="0" weight="0.3211997459588795"/>
+      <connection neuronIndex="35" layerIndex="0" weight="-0.12717727768145473"/>
+      <connection neuronIndex="36" layerIndex="0" weight="0.26358255128655533"/>
+      <connection neuronIndex="37" layerIndex="0" weight="0.055794218737181434"/>
+      <connection neuronIndex="38" layerIndex="0" weight="-0.08867237296192873"/>
+      <connection neuronIndex="39" layerIndex="0" weight="0.2495105310908871"/>
+      <connection neuronIndex="40" layerIndex="0" weight="-0.11970447278178736"/>
+      <connection neuronIndex="41" layerIndex="0" weight="0.1928725287159409"/>
+      <connection neuronIndex="42" layerIndex="0" weight="-0.17229524986537995"/>
+      <connection neuronIndex="43" layerIndex="0" weight="-0.06424153845899444"/>
+      <connection neuronIndex="44" layerIndex="0" weight="-0.001432098178760055"/>
+      <connection neuronIndex="45" layerIndex="0" weight="0.019146785555045676"/>
+      <connection neuronIndex="46" layerIndex="0" weight="-0.04307098686528327"/>
+      <connection neuronIndex="47" layerIndex="0" weight="-0.0039476807321685015"/>
+      <connection neuronIndex="48" layerIndex="0" weight="0.11681738492736876"/>
+      <connection neuronIndex="49" layerIndex="0" weight="0.24761241338199852"/>
+      <connection neuronIndex="50" layerIndex="0" weight="-0.20257557374887936"/>
+      <connection neuronIndex="51" layerIndex="0" weight="0.15825167423024383"/>
+      <connection neuronIndex="52" layerIndex="0" weight="0.0597316108411905"/>
+      <connection neuronIndex="53" layerIndex="0" weight="0.2465749398131279"/>
+      <bias value="1.0" weight="0.0"/>
+    </neuron>
+    <neuron position="22">
+      <connection neuronIndex="0" layerIndex="0" weight="0.13767508165779374"/>
+      <connection neuronIndex="1" layerIndex="0" weight="-0.006037040671492577"/>
+      <connection neuronIndex="2" layerIndex="0" weight="0.3011583365839032"/>
+      <connection neuronIndex="3" layerIndex="0" weight="0.07462800870583874"/>
+      <connection neuronIndex="4" layerIndex="0" weight="0.1648106971041437"/>
+      <connection neuronIndex="5" layerIndex="0" weight="-0.23922375853848118"/>
+      <connection neuronIndex="6" layerIndex="0" weight="-0.2550946555403666"/>
+      <connection neuronIndex="7" layerIndex="0" weight="0.03547660704287431"/>
+      <connection neuronIndex="8" layerIndex="0" weight="0.018174669534408217"/>
+      <connection neuronIndex="9" layerIndex="0" weight="0.10284718093218015"/>
+      <connection neuronIndex="10" layerIndex="0" weight="-0.03532973693890412"/>
+      <connection neuronIndex="11" layerIndex="0" weight="-0.2367216237818921"/>
+      <connection neuronIndex="12" layerIndex="0" weight="0.22930738744605245"/>
+      <connection neuronIndex="13" layerIndex="0" weight="0.31525685236982653"/>
+      <connection neuronIndex="14" layerIndex="0" weight="-0.1397603463884335"/>
+      <connection neuronIndex="15" layerIndex="0" weight="-0.30996825271248324"/>
+      <connection neuronIndex="16" layerIndex="0" weight="0.3264965172804068"/>
+      <connection neuronIndex="17" layerIndex="0" weight="-0.014975011912618075"/>
+      <connection neuronIndex="18" layerIndex="0" weight="-0.02986216430304106"/>
+      <connection neuronIndex="19" layerIndex="0" weight="-0.0180116329946739"/>
+      <connection neuronIndex="20" layerIndex="0" weight="-0.2988591230073323"/>
+      <connection neuronIndex="21" layerIndex="0" weight="0.06390461728806318"/>
+      <connection neuronIndex="22" layerIndex="0" weight="-0.21261739030964738"/>
+      <connection neuronIndex="23" layerIndex="0" weight="0.0435743532693062"/>
+      <connection neuronIndex="24" layerIndex="0" weight="-0.03958462468343449"/>
+      <connection neuronIndex="25" layerIndex="0" weight="0.14285155070947259"/>
+      <connection neuronIndex="26" layerIndex="0" weight="-0.13556662037619835"/>
+      <connection neuronIndex="27" layerIndex="0" weight="0.16819076705933728"/>
+      <connection neuronIndex="28" layerIndex="0" weight="0.1787196487380857"/>
+      <connection neuronIndex="29" layerIndex="0" weight="-0.14489180633656554"/>
+      <connection neuronIndex="30" layerIndex="0" weight="0.11981423961812943"/>
+      <connection neuronIndex="31" layerIndex="0" weight="0.05126751372082278"/>
+      <connection neuronIndex="32" layerIndex="0" weight="0.24121049272938383"/>
+      <connection neuronIndex="33" layerIndex="0" weight="-0.21614650995108162"/>
+      <connection neuronIndex="34" layerIndex="0" weight="0.291616444143505"/>
+      <connection neuronIndex="35" layerIndex="0" weight="0.11077469028703829"/>
+      <connection neuronIndex="36" layerIndex="0" weight="-0.2715691304991103"/>
+      <connection neuronIndex="37" layerIndex="0" weight="-0.10731554364820381"/>
+      <connection neuronIndex="38" layerIndex="0" weight="-0.10443279387923093"/>
+      <connection neuronIndex="39" layerIndex="0" weight="-0.33001263785367235"/>
+      <connection neuronIndex="40" layerIndex="0" weight="0.2689748669527407"/>
+      <connection neuronIndex="41" layerIndex="0" weight="0.10297710931876314"/>
+      <connection neuronIndex="42" layerIndex="0" weight="0.3299777508895608"/>
+      <connection neuronIndex="43" layerIndex="0" weight="-0.07055746655446499"/>
+      <connection neuronIndex="44" layerIndex="0" weight="0.13035815531975242"/>
+      <connection neuronIndex="45" layerIndex="0" weight="-0.28476463603763835"/>
+      <connection neuronIndex="46" layerIndex="0" weight="-0.12052484352405332"/>
+      <connection neuronIndex="47" layerIndex="0" weight="-0.1623199583996982"/>
+      <connection neuronIndex="48" layerIndex="0" weight="0.20486330705785188"/>
+      <connection neuronIndex="49" layerIndex="0" weight="0.2984758040182693"/>
+      <connection neuronIndex="50" layerIndex="0" weight="0.11370916537872677"/>
+      <connection neuronIndex="51" layerIndex="0" weight="0.05406689170376522"/>
+      <connection neuronIndex="52" layerIndex="0" weight="0.2518559257870458"/>
+      <connection neuronIndex="53" layerIndex="0" weight="0.15723970086368977"/>
+      <bias value="1.0" weight="0.0"/>
+    </neuron>
+    <neuron position="23">
+      <connection neuronIndex="0" layerIndex="0" weight="-0.03253478256420961"/>
+      <connection neuronIndex="1" layerIndex="0" weight="-0.1369876587288326"/>
+      <connection neuronIndex="2" layerIndex="0" weight="-0.17721564823745206"/>
+      <connection neuronIndex="3" layerIndex="0" weight="0.21635386382616945"/>
+      <connection neuronIndex="4" layerIndex="0" weight="-0.21801417186445338"/>
+      <connection neuronIndex="5" layerIndex="0" weight="-0.30789268020651434"/>
+      <connection neuronIndex="6" layerIndex="0" weight="0.2058585381992341"/>
+      <connection neuronIndex="7" layerIndex="0" weight="0.06253570667378394"/>
+      <connection neuronIndex="8" layerIndex="0" weight="-0.31321498175105145"/>
+      <connection neuronIndex="9" layerIndex="0" weight="0.19345574372434876"/>
+      <connection neuronIndex="10" layerIndex="0" weight="0.2538393962951368"/>
+      <connection neuronIndex="11" layerIndex="0" weight="0.3165269195986529"/>
+      <connection neuronIndex="12" layerIndex="0" weight="0.06044321480583953"/>
+      <connection neuronIndex="13" layerIndex="0" weight="0.224736744337437"/>
+      <connection neuronIndex="14" layerIndex="0" weight="0.30799891207781144"/>
+      <connection neuronIndex="15" layerIndex="0" weight="0.3088884620719337"/>
+      <connection neuronIndex="16" layerIndex="0" weight="0.31265964507277016"/>
+      <connection neuronIndex="17" layerIndex="0" weight="-0.17982381528938252"/>
+      <connection neuronIndex="18" layerIndex="0" weight="0.2022940127866028"/>
+      <connection neuronIndex="19" layerIndex="0" weight="-0.04450251003664246"/>
+      <connection neuronIndex="20" layerIndex="0" weight="-0.31647376016311773"/>
+      <connection neuronIndex="21" layerIndex="0" weight="0.20538372840007008"/>
+      <connection neuronIndex="22" layerIndex="0" weight="-0.18507640529662858"/>
+      <connection neuronIndex="23" layerIndex="0" weight="0.18524603423582403"/>
+      <connection neuronIndex="24" layerIndex="0" weight="0.18968082208674303"/>
+      <connection neuronIndex="25" layerIndex="0" weight="0.013865196504040667"/>
+      <connection neuronIndex="26" layerIndex="0" weight="-0.21496982272668197"/>
+      <connection neuronIndex="27" layerIndex="0" weight="0.2299928530568846"/>
+      <connection neuronIndex="28" layerIndex="0" weight="-0.17306894446720134"/>
+      <connection neuronIndex="29" layerIndex="0" weight="0.2561966138574305"/>
+      <connection neuronIndex="30" layerIndex="0" weight="-0.24776699059472174"/>
+      <connection neuronIndex="31" layerIndex="0" weight="-0.2962923057991117"/>
+      <connection neuronIndex="32" layerIndex="0" weight="-0.18983369748406012"/>
+      <connection neuronIndex="33" layerIndex="0" weight="0.20624735288888502"/>
+      <connection neuronIndex="34" layerIndex="0" weight="0.06419705806766501"/>
+      <connection neuronIndex="35" layerIndex="0" weight="0.18618187544849424"/>
+      <connection neuronIndex="36" layerIndex="0" weight="0.08800555311868635"/>
+      <connection neuronIndex="37" layerIndex="0" weight="0.05833033703201579"/>
+      <connection neuronIndex="38" layerIndex="0" weight="-0.3141229608105385"/>
+      <connection neuronIndex="39" layerIndex="0" weight="-0.29447740777461173"/>
+      <connection neuronIndex="40" layerIndex="0" weight="0.3072157184979744"/>
+      <connection neuronIndex="41" layerIndex="0" weight="-0.21397264465464425"/>
+      <connection neuronIndex="42" layerIndex="0" weight="0.2191102982564463"/>
+      <connection neuronIndex="43" layerIndex="0" weight="-0.06322137367913933"/>
+      <connection neuronIndex="44" layerIndex="0" weight="0.28169656704695395"/>
+      <connection neuronIndex="45" layerIndex="0" weight="0.14789359362558097"/>
+      <connection neuronIndex="46" layerIndex="0" weight="0.17868040153012205"/>
+      <connection neuronIndex="47" layerIndex="0" weight="-0.3064326612618285"/>
+      <connection neuronIndex="48" layerIndex="0" weight="-0.033968356120873344"/>
+      <connection neuronIndex="49" layerIndex="0" weight="-0.10516272327053233"/>
+      <connection neuronIndex="50" layerIndex="0" weight="0.0027774397095053915"/>
+      <connection neuronIndex="51" layerIndex="0" weight="-0.1853235332739201"/>
+      <connection neuronIndex="52" layerIndex="0" weight="0.25476224301591094"/>
+      <connection neuronIndex="53" layerIndex="0" weight="-0.25157360986325406"/>
+      <bias value="1.0" weight="0.0"/>
+    </neuron>
+  </layer>
+  <layer type="OutputLayer" function="6" count="1">
+    <neuron position="0">
+      <connection neuronIndex="0" layerIndex="1" weight="0.07107184595854121"/>
+      <connection neuronIndex="1" layerIndex="1" weight="-0.01143700875025172"/>
+      <connection neuronIndex="2" layerIndex="1" weight="-0.039478326717607926"/>
+      <connection neuronIndex="3" layerIndex="1" weight="0.07764076277944931"/>
+      <connection neuronIndex="4" layerIndex="1" weight="-0.45725852825384267"/>
+      <connection neuronIndex="5" layerIndex="1" weight="0.11188333535767314"/>
+      <connection neuronIndex="6" layerIndex="1" weight="0.2659196125393003"/>
+      <connection neuronIndex="7" layerIndex="1" weight="-0.38341731178691524"/>
+      <connection neuronIndex="8" layerIndex="1" weight="-0.31187663435389024"/>
+      <connection neuronIndex="9" layerIndex="1" weight="0.16726281525788977"/>
+      <connection neuronIndex="10" layerIndex="1" weight="-0.39385302390265114"/>
+      <connection neuronIndex="11" layerIndex="1" weight="0.07631780289771561"/>
+      <connection neuronIndex="12" layerIndex="1" weight="-0.2611532865175939"/>
+      <connection neuronIndex="13" layerIndex="1" weight="-0.05961218230190346"/>
+      <connection neuronIndex="14" layerIndex="1" weight="-0.08602169656830672"/>
+      <connection neuronIndex="15" layerIndex="1" weight="0.2079003346222108"/>
+      <connection neuronIndex="16" layerIndex="1" weight="-0.014864859449041867"/>
+      <connection neuronIndex="17" layerIndex="1" weight="-0.08028383122503602"/>
+      <connection neuronIndex="18" layerIndex="1" weight="-0.486472557682794"/>
+      <connection neuronIndex="19" layerIndex="1" weight="0.443174784576038"/>
+      <connection neuronIndex="20" layerIndex="1" weight="-0.3097493093458128"/>
+      <connection neuronIndex="21" layerIndex="1" weight="-0.34934704685411744"/>
+      <connection neuronIndex="22" layerIndex="1" weight="-0.14800279959657192"/>
+      <connection neuronIndex="23" layerIndex="1" weight="-0.05600415023349764"/>
+      <bias value="1.0" weight="0.0"/>
+    </neuron>
+  </layer>
+</mlp>

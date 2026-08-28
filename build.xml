@@ -1,0 +1,126 @@
+<project name="mlpd" basedir="." default="all">
+  <!--
+    ====================================================================
+    build.xml  -  discover, compile, and package the MLPd server and
+                  every drop-in module.  Ant port of build.sh.
+
+      src/modules/<name>/<Name>Module.java   module source (package modules.<name>;)
+      src/modules/<name>/*.xml               trained network file(s) (optional)
+
+    For each module this build:
+      1. compiles the module's *.java against mlp-lite + gson
+      2. writes the SPI descriptor  META-INF/services/org.joedog.ann.Module
+      3. packages  lib/modules/<name>.jar
+      4. copies    src/modules/<name>/*.xml  ->  out/modules/<name>/
+
+    To add a module: drop <Name>Module.java (and its trained .xml) into
+    src/modules/<name>/ and run `ant` (or `ant modules`). No edits here.
+    ====================================================================
+  -->
+
+  <property name="home.dir"        value="."       />
+  <property name="src.dir"         value="src"     />
+  <property name="build.dir"       value="out"     />
+  <property name="lib.dir"         value="lib"     />
+  <property name="mlp.version"     value="1.1.4"   />
+  <property name="gson.version"    value="2.11.0"  />
+  <property name="mlp.jar"         location="${lib.dir}/mlp-lite-${mlp.version}.jar" />
+  <property name="gson.jar"        location="${lib.dir}/gson-${gson.version}.jar"    />
+
+  <!-- module layout -->
+  <property name="src.modules"     value="${src.dir}/modules"    />
+  <property name="modules.jar.dir" value="${lib.dir}/modules"    />
+  <property name="modules.out.dir" value="${build.dir}/modules"  />
+  <property name="stage.dir"       value="${build.dir}/.stage"   />
+  <property name="module.spi"      value="org.joedog.ann.Module" />
+
+  <!-- server artifact -->
+  <property name="server.jar"      value="MLPd.jar"              />
+  <property name="main.class"      value="org.joedog.mlpd.Main"  />
+
+  <property name="component.name"   value="mlpd"                 />
+  <property name="component.vendor" value="Jeffrey Fulmer"       />
+  <property name="mlpd.version"     value="1.0.0"                />
+
+  <!-- Targets the Java 22 release (override with -Djava.release=NN). -->
+  <property name="java.release" value="22" />
+
+  <path id="server.classpath">
+    <pathelement location="${build.dir}" />
+    <pathelement location="${mlp.jar}"   />
+    <fileset dir="${lib.dir}" erroronmissingdir="false">
+      <include name="*.jar" />
+    </fileset>
+  </path>
+
+  <target name="clean" description="remove build artifacts">
+    <delete dir="${build.dir}" />
+    <delete dir="${modules.jar.dir}" />
+    <delete file="${server.jar}" />
+  </target>
+
+  <target name="compile" depends="clean" description="compile the mlpd server sources">
+    <mkdir dir="${build.dir}" />
+    <javac debug="true" includeantruntime="false" release="${java.release}"
+           srcdir="${src.dir}" destdir="${build.dir}">
+      <classpath refid="server.classpath" />
+      <include name="**/*.java" />
+      <!-- XXX: module sources are built separately into their own jars -->
+      <exclude name="modules/**" />
+    </javac>
+  </target>
+
+  <target name="server" depends="compile" description="package the runnable MLPd.jar">
+    <jar jarfile="${server.jar}" basedir="${build.dir}">
+      <exclude name="modules/**" />
+      <exclude name=".stage/**" />
+      <manifest>
+        <attribute name="Built-By"   value="${user.name}"  />
+        <attribute name="Main-Class" value="${main.class}" />
+        <section name="common">
+          <attribute name="Specification-Title"    value="${component.name}"                />
+          <attribute name="Specification-Version"  value="${mlpd.version}"                  />
+          <attribute name="Specification-Vendor"   value="${component.vendor}"              />
+          <attribute name="Implementation-Title"   value="${component.name}"                />
+          <attribute name="Implementation-Version" value="${mlpd.version} ${TODAY}"         />
+          <attribute name="Implementation-Vendor"  value="${component.vendor}"              />
+        </section>
+      </manifest>
+    </jar>
+  </target>
+
+  <!-- ============================ MODULES =========================== -->
+  <!--
+    Auto-discovery loop.  We hand each src/modules/<name> directory to a
+    single generic build file (module.xml) via <subant>.  That is the
+    native-Ant equivalent of the shell script's `for dir in .../*/` loop,
+    and it needs no third-party tasks (no ant-contrib).
+  -->
+  <available file="${src.modules}" type="dir" property="has.modules.dir" />
+
+  <target name="modules" if="has.modules.dir"
+          description="compile + package every drop-in module">
+    <mkdir dir="${modules.jar.dir}" />
+    <mkdir dir="${modules.out.dir}" />
+    <subant target="build-module"
+            genericantfile="${basedir}/module.xml"
+            inheritall="false" failonerror="true">
+      <!-- absolute locations, because each sub-build's basedir is the module dir -->
+      <property name="mlp.jar"     location="${mlp.jar}"         />
+      <property name="gson.jar"    location="${gson.jar}"        />
+      <property name="stage.root"  location="${stage.dir}"       />
+      <property name="jars.out"    location="${modules.jar.dir}" />
+      <property name="models.out"  location="${modules.out.dir}" />
+      <property name="module.spi"  value="${module.spi}"         />
+      <property name="java.release" value="${java.release}"      />
+      <dirset dir="${src.modules}" includes="*" />
+    </subant>
+    <delete dir="${stage.dir}" />
+    <echo>Modules packaged into ${modules.jar.dir}/, models into ${modules.out.dir}/</echo>
+  </target>
+
+  <!-- ============================== ALL ============================= -->
+  <target name="all" depends="clean,server,modules"
+          description="build the server and all modules (default)" />
+
+</project>

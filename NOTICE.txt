@@ -1,0 +1,11 @@
+This distribution includes compiled JAR binaries from the Eclipse Jetty project 
+(https://eclipse.dev), which is dual-licensed under the Apache License 2.0 
+and the Eclipse Public License 2.0. 
+
+You may elect to redistribute or use these binaries under the terms of either license. 
+Copies of these licenses are included in the root directory of this distribution 
+as 'LICENSE-jetty.txt'.
+
+Copyright 1995-2026 Mort Bay Consulting Pty Ltd and others.
+
+

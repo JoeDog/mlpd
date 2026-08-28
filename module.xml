@@ -1,0 +1,90 @@
+<project name="mlpd-module" basedir="." default="build-module">
+  <!--
+    ====================================================================
+    module.xml  -  generic, framework-owned build for ONE drop-in module.
+
+    This file is invoked once per module by the main build.xml via
+    <subant genericantfile="module.xml">, which sets `basedir` to the
+    module's own directory (src/modules/<name>).  Users NEVER edit this
+    file and never write a per-module build file; it is part of the
+    MLPd framework, exactly like build.xml.
+
+    Inherited from the parent build (see build.xml <subant>):
+      mlp.jar, gson.jar        compile classpath
+      stage.root               transient class-staging root
+      jars.out                 where <name>.jar is written  (lib/modules)
+      models.out               where *.xml is copied         (out/modules)
+      module.spi               SPI interface name (org.joedog.ann.Module)
+      java.release             javac release level
+    ====================================================================
+  -->
+
+  <target name="detect">
+    <!-- module name = this directory's name (e.g. .../modules/fraud -> fraud) -->
+    <basename property="mod.name" file="${basedir}" />
+
+    <!-- A module dir is valid only if it contains a *Module.java source. -->
+    <resourcecount property="mod.src.count">
+      <fileset dir="${basedir}" includes="*Module.java" />
+    </resourcecount>
+    <condition property="mod.valid">
+      <not><equals arg1="${mod.src.count}" arg2="0" /></not>
+    </condition>
+  </target>
+
+  <target name="build-module" depends="detect">
+    <antcall target="-skip" />
+    <antcall target="-build" />
+  </target>
+
+  <!-- nothing to build: no *Module.java in this directory -->
+  <target name="-skip" unless="mod.valid">
+    <echo>skip ${mod.name} (no *Module.java)</echo>
+  </target>
+
+  <!-- ================================================================ -->
+  <target name="-build" if="mod.valid">
+    <property name="mod.classes" location="${stage.root}/${mod.name}" />
+
+    <!-- Derive the SPI provider class name straight from the source file
+         name, so 'fraud' -> FraudModule with no case-conversion gymnastics.
+         FQN convention (matches build.sh): modules.<name>.<Name>Module     -->
+    <pathconvert property="mod.simple">
+      <fileset dir="${basedir}" includes="*Module.java" />
+      <chainedmapper>
+        <flattenmapper />
+        <globmapper from="*.java" to="*" />
+      </chainedmapper>
+    </pathconvert>
+    <property name="mod.provider" value="modules.${mod.name}.${mod.simple}" />
+
+    <!-- 1. compile this module's sources into an isolated staging area -->
+    <delete dir="${mod.classes}" />
+    <mkdir  dir="${mod.classes}" />
+    <javac debug="true" includeantruntime="false" release="${java.release}"
+           srcdir="${basedir}" destdir="${mod.classes}">
+      <classpath>
+        <pathelement location="${mlp.jar}"  />
+        <pathelement location="${gson.jar}" />
+      </classpath>
+      <include name="*.java" />
+    </javac>
+
+    <!-- 2 + 3. package lib/modules/<name>.jar, generating the SPI
+         descriptor natively via the <service> element (no hand-written
+         META-INF/services file needed). -->
+    <mkdir dir="${jars.out}" />
+    <jar destfile="${jars.out}/${mod.name}.jar">
+      <fileset dir="${mod.classes}" />
+      <service type="${module.spi}" provider="${mod.provider}" />
+    </jar>
+
+    <!-- 4. copy trained network file(s), if any, to out/modules/<name>/ -->
+    <copy todir="${models.out}/${mod.name}" failonerror="false">
+      <fileset dir="${basedir}" includes="*.xml" />
+    </copy>
+
+    <echo>built ${mod.name} -> ${jars.out}/${mod.name}.jar  (provider ${mod.provider})</echo>
+  </target>
+
+</project>
