@@ -1,0 +1,290 @@
+<html>
+<head>
+<title>Tic Tac Toe</title>
+  <script>
+  class Model {
+    static O      = "O";
+    static X      = "X";
+    static Oturn  = 0;
+    static Xturn  = 1;
+    static OWIN   = 1;
+    static XWIN   = 0;
+    static DRAW   = 2;
+    static ACTIVE = -1;
+  
+    constructor() {
+      this.board = Array.from({ length: 9 }, () => "-");
+    }
+  
+    state() {
+      let ret = "";  
+      for (let i = 0; i < this.board.length; i++) {
+        ret += this.board[i];
+      }
+      return ret;
+    }
+
+    reset() {
+      for (let i = 0; i < this.board.length; i++) {
+        this.board[i] = "-";
+      }
+    }
+  
+    move(tile, pos) {
+      if (typeof pos !== 'number' || Number.isNaN(pos)) {
+        return "";
+      }
+      
+      if (pos < 0 || pos > this.board.length - 1) {
+        return "";
+      }
+      
+      if (this.board[pos] === "X" || this.board[pos] === "O") {
+        return "";
+      } else {
+        this.board[pos] = tile;
+        
+        let ret = "";  
+        for (let i = 0; i < this.board.length; i++) {
+          ret += this.board[i];
+        }
+        return ret;
+      }
+    }
+  
+    canMove(pos) {
+      if (typeof pos !== 'number' || Number.isNaN(pos)) {
+        return false;
+      }
+      if (this.gameStatus() != Model.ACTIVE) {
+        return false;
+      }
+      if (this.board[pos] === "-") {
+        return true;
+      } 
+      return false;
+    }
+    gameStatus() {
+      const b = this.state();
+
+      const wins = [
+        [0,1,2], [3,4,5], [6,7,8],
+        [0,3,6], [1,4,7], [2,5,8],
+        [0,4,8], [2,4,6]
+      ];
+
+      for (const [a, c, d] of wins) {
+        if (b[a] !== '-' &&
+            b[a] === b[c] &&
+            b[a] === b[d]) {
+          console.log("WE HAVE A WINNER");
+          return (b[a] === 'O') ? Model.OWIN : Model.XWIN;
+        }
+      }
+
+      if (b.indexOf('-') >= 0)
+        return Model.ACTIVE;
+
+      return Model.DRAW;
+    } 
+  } /* End of Model */
+  
+  class View {
+    constructor() {
+      this.canvas = document.createElement('canvas');
+      this.canvas.width = 300;
+      this.canvas.height = 300;
+      this.canvas.style.border = '2px solid #333';
+      document.body.appendChild(this.canvas);
+      this.ctx = this.canvas.getContext('2d');
+      this.cellSize = this.canvas.width / 3;
+      this.drawBoard();
+    }
+  
+    drawBoard() {
+      this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+      this.ctx.strokeStyle = '#333';
+      this.ctx.lineWidth = 4;
+      this.ctx.lineCap = 'round';
+  
+      for (let i = 1; i < 3; i++) {
+        const pos = i * this.cellSize;
+        
+        // Vertical lines
+        this.ctx.beginPath();
+        this.ctx.moveTo(pos, 10);
+        this.ctx.lineTo(pos, this.canvas.height - 10);
+        this.ctx.stroke();
+  
+        // Horizontal lines
+        this.ctx.beginPath();
+        this.ctx.moveTo(10, pos);
+        this.ctx.lineTo(this.canvas.width - 10, pos);
+        this.ctx.stroke();
+      }
+    }
+  
+    // Instead of 9 separate panels, use one click handler that resolves the row/col
+    bindCellClick(handler) {
+      this.canvas.addEventListener('click', (event) => {
+        const rect = this.canvas.getBoundingClientRect();
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+        
+        // Calculate 0-indexed row and column based on click coordinates
+        const col = Math.floor(x / this.cellSize);
+        const row = Math.floor(y / this.cellSize);
+        
+        // Pass row and col back to your Controller game logic
+        if (row >= 0 && row < 3 && col >= 0 && col < 3) {
+          handler(row, col);
+        }
+      });
+    }
+  
+    // Draw an X or O inside a specific cell index
+    drawToken(row, col, token) {
+      // Calculate center coordinate of the targeted grid box
+      const centerX = col * this.cellSize + this.cellSize / 2;
+      const centerY = row * this.cellSize + this.cellSize / 2;
+      const offset = this.cellSize * 0.25; // Padding from cell edges
+  
+      this.ctx.lineWidth = 5;
+      this.ctx.lineCap = 'round';
+  
+      if (token.toUpperCase() === 'X') {
+        this.ctx.strokeStyle = '#ff4d4d'; // Red X
+        
+        this.ctx.beginPath();
+        this.ctx.moveTo(centerX - offset, centerY - offset);
+        this.ctx.lineTo(centerX + offset, centerY + offset);
+        this.ctx.stroke();
+  
+        this.ctx.beginPath();
+        this.ctx.moveTo(centerX + offset, centerY - offset);
+        this.ctx.lineTo(centerX - offset, centerY + offset);
+        this.ctx.stroke();
+        
+      } else if (token.toUpperCase() === 'O') {
+        this.ctx.strokeStyle = '#4da6ff'; // Blue O
+        const radius = this.cellSize * 0.25;
+        
+        this.ctx.beginPath();
+        this.ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
+        this.ctx.stroke();
+      }
+    }
+
+    showResult(res) {
+      console.log(res);
+    }
+  } /* end of View */
+
+  class Controller {
+    constructor(model, view) {
+      this.model = model;
+      this.view  = view;
+      this.busy  = false;
+      this.view.bindCellClick((row, col) => this.handleHumanMove(row, col));
+      this.newGame();
+    }
+  
+    newGame() {
+      model.reset();
+      const state = model.state();
+      if (state === "---------") {
+        const move   = this.randy();
+        const coords = this.coordinates(move);
+        this.model.move('O', move);
+        this.view.drawToken(coords[0], coords[1], "O");
+      }
+    }
+  
+    async handleHumanMove(row, col) {
+      if (this.busy)
+        return;
+  
+      const pos = this.index(row, col);
+  
+      if (!this.model.canMove(pos))
+        return;
+  
+      // Human move
+      this.model.move('X', pos);
+      this.view.drawToken(row, col, 'X');
+  
+      const result = this.model.gameStatus();
+      if (result != Model.ACTIVE)
+        return this.finishGame(result);
+  
+      // Computer move
+      this.busy = true;
+  
+      try {
+        const move = await this.getComputerMove();
+  
+        this.model.move('O', move);
+        this.view.drawToken(
+          Math.floor(move / 3),
+          move % 3,
+          'O'
+        );
+  
+        const result = this.model.gameStatus();
+        console.log("result: "+result);
+        if (result != Model.ACTIVE)
+          return this.finishGame(result);
+  
+      } finally {
+        this.busy = false;
+      }
+    }
+  
+    async getComputerMove() {
+      const payload = {
+          board: this.model.state(),
+          turn: 1
+      };
+  
+      const response = await fetch('http://localhost:8080/byron/prompt', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(payload)
+      });
+  
+      const result = await response.json();
+      return result.move;
+    }
+  
+    finishGame(result) {
+      this.view.showResult(result);
+    }
+  
+    index(row, col) {
+      return (row * 3) + col;
+    }
+  
+    coordinates(index) {
+      const row = Math.floor(index / 3);
+      const col = index % 3;
+      return [row, col];
+    }
+  
+    randy() {
+      return Math.floor(Math.random() * 9);
+    }
+  }
+  </script>
+  <script>
+    window.onload = function() {
+      model   = new Model();
+      view    = new View();
+      control = new Controller(model, view);
+    };
+  </script>
+</head>
+<body>
+</body>
+</html>
