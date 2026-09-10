@@ -35,7 +35,6 @@
   <property name="module.spi"      value="org.joedog.ann.Module" />
 
   <!-- server artifact -->
-  <property name="server.jar"      value="MLPd.jar"              />
   <property name="main.class"      value="org.joedog.mlpd.Main"  />
 
   <property name="component.name"   value="mlpd"                 />
@@ -45,6 +44,27 @@
   <!-- Targets the Java 22 release (override with -Djava.release=NN). -->
   <property name="java.release" value="22" />
 
+  <!-- 
+    This version number is sourced in org.joedog.ann.Version
+    This target parses that file, trims white space and newlines 
+    and assigns the release number to the version property.
+   -->
+  <target name="release">
+    <loadfile srcfile="${src.dir}/org/joedog/ann/Version.java" property="version">
+      <filterchain>
+        <linecontainsregexp>
+          <regexp pattern='public final static String version   = ".*";'/>
+        </linecontainsregexp>
+        <tokenfilter>
+          <replaceregex pattern='public final static String version   = "(.*)";' replace='\1'/>
+          <replaceregex pattern=" "  replace="" flags="g"/>
+        </tokenfilter>
+        <striplinebreaks/>
+      </filterchain>
+    </loadfile>
+    <echo>"${version}"</echo>
+  </target>
+
   <path id="server.classpath">
     <pathelement location="${build.dir}" />
     <pathelement location="${mlp.jar}"   />
@@ -53,10 +73,10 @@
     </fileset>
   </path>
 
-  <target name="clean" description="remove build artifacts">
+  <target name="clean" depends="release" description="remove build artifacts">
     <delete dir="${build.dir}" />
     <delete dir="${modules.jar.dir}" />
-    <delete file="${server.jar}" />
+    <delete file="MLPd-${version}.jar" />
   </target>
 
   <target name="compile" depends="clean" description="compile the mlpd server sources">
@@ -70,8 +90,8 @@
     </javac>
   </target>
 
-  <target name="server" depends="compile" description="package the runnable MLPd.jar">
-    <jar jarfile="${server.jar}" basedir="${build.dir}">
+  <target name="server" depends="release,compile" description="package the runnable MLPd.jar">
+    <jar jarfile="MLPd-${version}.jar" basedir="${build.dir}">
       <exclude name="modules/**" />
       <exclude name=".stage/**" />
       <manifest>
