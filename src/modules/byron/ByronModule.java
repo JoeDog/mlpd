@@ -77,15 +77,18 @@ public class ByronModule implements Module {
   /** Danger of a child position to O; lower is better.  Terminals scored exactly. */
   private double childValue(MLP mlp, String child) {
     char w = winner(child);
-    if (w == 'O') return 0.0;              // O just won -> best possible
-    if (w == 'X') return 1.0;              // guard (cannot happen after an O move)
-    if (isFull(child)) return 0.5;         // draw
-    Value[] out = mlp.predict(encodeBoard(child, false)); // child: X to move
+    if (w == 'O') return 0.0;
+    if (w == 'X') return 1.0;
+    if (isFull(child)) return 0.5;
+    Value[] out = mlp.predict(encodeBoard(child, false));
     double win = out[0].getValue();
     double dr  = out[1].getValue();
     double ls  = out[2].getValue();
     double s   = win + dr + ls;
-    return s <= 0 ? 0.5 : (dr * 0.5 + ls * 1.0) / s;
+    double result = s <= 0 ? 0.5 : (dr * 0.5 + ls * 1.0) / s;
+    System.out.printf("child=%-9s  win=%.4f draw=%.4f loss=%.4f -> danger=%.4f%n",
+        child, win, dr, ls, result);
+    return result;
   }
 
   // ---- default SPI path (encode -> predict -> decode) and training ----
